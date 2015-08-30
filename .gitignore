@@ -1,0 +1,12 @@
+# Ignore everything.
+*
+
+# Except for the good stuff.
+!/.gitignore
+!/README.md
+!/client_mods
+!/client_mods/com.pa.n30n.*
+!/client_mods/com.pa.n30n.*/**
+!/server_mods
+!/server_mods/com.pa.n30n.*
+!/server_mods/com.pa.n30n.*/**

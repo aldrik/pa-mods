@@ -1,0 +1,30 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.UITweaks",
+	"display_name": "UI tweaks",
+	"description": "Removes the control groups bar & the need to scroll the selections box",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2015/06/11",
+	"build": "82834",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"ui"
+	],
+	"scenes": {
+		"live_game": [
+			"coui://ui/mods/hideControlGroupBar.css"
+		],
+		"live_game_selection": [
+			"coui://ui/mods/selection.css"
+		],
+		"live_game_control_group_bar": [
+			"coui://ui/mods/idel_only.css"
+		],
+		"live_game_action_bar": [
+			"coui://ui/mods/power_and_continuous_build_stance.css"
+		]
+
+	}
+}

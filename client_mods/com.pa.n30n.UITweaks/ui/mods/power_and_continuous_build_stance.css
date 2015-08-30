@@ -1,0 +1,12 @@
+#cmd_order_build [src$="orders_build_stance_normal.png"],
+#cmd_order_energy [src$="orders_energy_hold.png"] {
+	-webkit-animation-name: alert;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes alert {
+	0% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1.5); }
+}

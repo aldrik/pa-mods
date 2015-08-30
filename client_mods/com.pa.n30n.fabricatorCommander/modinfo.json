@@ -1,0 +1,15 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.fabricatorCommander",
+	"display_name": "Fabricator commander",
+	"description": "Adds commander to the fabricator grouping, so it is included in idle alerts and idel fabricator selecting.",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2015/09/11",
+	"build": "87296",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"ui", "in-game"
+	]
+}

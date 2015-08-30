@@ -1,0 +1,21 @@
+/* Position type filters at the bottom */
+.wrapper {
+	flex-direction: column-reverse !important;
+	margin-bottom: -11px !important;
+}
+.summary_bar {
+	border-top: 1px solid #002A3D;;
+	border-bottom: none !important;
+}
+
+/* Remove scroll bar */
+.div_unit_list {
+	max-height: none !important;
+	max-width: 218px !important;
+	margin-bottom: -20px;
+}
+
+/* Remove the remove from selection buttons (use right click instead) */
+.close.btn_win {
+	display: none !important;
+}

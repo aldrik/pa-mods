@@ -1,0 +1,17 @@
+#control_group_bar {
+	bottom: -30px !important;
+}
+
+.div_unit_selection_cont {
+	bottom: 30px !important;
+}
+
+.pip.bottom_right,
+.div_game_menu {
+	bottom: 31px !important;
+}
+
+.div_build_bar_cont,
+.bottom_show_unit_group_controls {
+	bottom: 0px !important;
+}

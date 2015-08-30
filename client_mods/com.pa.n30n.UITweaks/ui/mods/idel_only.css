@@ -1,0 +1,10 @@
+/* Remove type selection buttons (to make room for idle alerts) */
+.div_implicit_group_cont:not(.idle_groups) {
+	display: none;
+}
+
+/* Position idle alerts over main bar (to prevent overlapping selected units) */
+.div_implicit_group_cont.idle_groups {
+	bottom: 30px !important;
+	border: none !important;
+}

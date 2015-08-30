@@ -1,0 +1,28 @@
+.div_planet_list_item_left {
+	position: relative;
+}
+
+.div_planet_list_item_left [data-metalSpots]::before {
+	position: absolute;
+	top: 5px;
+	left: -1px;
+	
+	width: 24px;
+	
+	text-align: center;
+	font-size: 12px;
+	
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+	content: attr(data-metalSpots);
+}
+
+.div_planet_list_item_left :not([src$="/gas.png"]) + [data-metalSpots="0"] {
+	display: none;
+}
+
+.div_planet_list_item_left [data-metalSpots="0"]::before {
+	top: 1px;
+	font-size: 16px;
+	content: "\221e" /* infinity */;
+}

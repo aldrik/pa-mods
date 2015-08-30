@@ -1,0 +1,26 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.expandedHotkeys",
+	"display_name": "Expanded Hotkeys",
+	"description": "Extends the vanilla hotkeys system a little",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2015/08/31",
+	"build": "86765",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"ui", "in-game"
+	],
+	"scenes": {
+		"global_mod_list": [
+			"coui://ui/mods/hotkeys/global.js"
+		],
+		"live_game": [
+			"coui://ui/mods/hotkeys/live_game.js"
+		],
+		"live_game_build_bar": [
+			"coui://ui/mods/hotkeys/live_game.js"
+		]
+	}
+}
