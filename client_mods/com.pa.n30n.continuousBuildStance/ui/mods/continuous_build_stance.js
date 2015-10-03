@@ -1,21 +1,22 @@
-(function buildStanceContinuous() {
-	var original = handlers.selection;
+(function() {
+	// var original = handlers.selection;
 	var factory = /(unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
-	handlers.selection = function selectionWrapper(payload) {
+	model.selection.subscribe(function buildStanceContinuous(payload) {
 		/* Upon selecting an idle factory set build stance to continuous. */
-		for (var spec in payload.spec_ids) {
-			if (factory.test(spec)) {
-				for (var i in payload.build) {
-					if (payload.build[i] === "normal" && !Object.keys(payload.build_orders).length) {
-						model.selectionBuildStanceContinuous();
-						break;
+		if (payload && model.mode() !== "select") {
+			for (var spec in payload.spec_ids) {
+				if (factory.test(spec)) {
+					for (var i in payload.build) {
+						if (payload.build[i] === "normal" && !Object.keys(payload.build_orders).length) {
+							model.selectionBuildStanceContinuous();
+							break;
+						}
 					}
+					break;
 				}
-				break;
 			}
 		}
-		return original.apply(this, arguments);
-	};
+	});
 
 	var playSoundAtLocation = api.audio.playSoundAtLocation;
 	api.audio.playSoundAtLocation = function(cue, x, y, z) {
