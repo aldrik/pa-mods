@@ -79,6 +79,15 @@
 		default: ''
 	};
 
+	api.settings.definitions.keyboard.settings["toggle_poll_lock"] = {
+		title: '!LOC:toggle poll lock',
+		type: 'keybind',
+		set: 'camera',
+		display_group: '!LOC:camera',
+		display_sub_group: '!LOC:tracking & alignment',
+		default: ''
+	};
+
 
 	/* MODELESS COMMANDS ----------------*/
 	["move",

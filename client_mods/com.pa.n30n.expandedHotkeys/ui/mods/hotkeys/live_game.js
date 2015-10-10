@@ -77,6 +77,14 @@
 		api.unit.selfDestruct();
 	};
 
+	action_sets.general["toggle_poll_lock"] = (function() {
+		var poll_lock = api.settings.data.camera.pole_lock.toLowerCase();
+		return function() {
+			poll_lock = (poll_lock === "on") ? "off" : "on";
+			engine.call("set_camera_pole_lock", poll_lock)
+		}
+	})();
+
 
 	/* DOUBLE TAP SELECTION FIX ---*/
 	var dt_selects = {
