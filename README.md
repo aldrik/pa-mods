@@ -17,12 +17,17 @@ After: ![](http://i.cubeupload.com/Gk7hR6.png)
 
 Extends the vanilla hotkeys system a little:
 
-- Enables adding immediate/prioritised build queues (control key by default).
+- *Enables adding immediate/prioritised build queues (control key by default).*
+- *Modeless/click-free commands (hold for area commands).*
 - Clear build queue(s) while allowing already started units to finish.
 - Filter selection by unit type.
-- Toggle chronocam.
+- Select all idle fabricators.
+- Toggle chronocam (jumps back in time with rapid consecutive key presses).
 - Also removes the annoying prompt when deleting units & structures.
 - Makes the ammo group accessible.
+- [Fix for the bug with double pressing recall command groups not working][alphaBug].
+
+[alphaBug]: https://forums.uberent.com/threads/hotfix-build-83796-with-release-build-82834-is-live.68993/page-9#post-1094588
 
 
 ### No splash

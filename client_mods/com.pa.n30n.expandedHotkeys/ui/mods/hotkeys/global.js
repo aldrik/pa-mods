@@ -69,4 +69,45 @@
 		default: 'tab',
 		allow_conflicts: true
 	};
+
+	api.settings.definitions.keyboard.settings["select_all_idle_fabbers"] = {
+		title: '!LOC:select all idle fabbers',
+		type: 'keybind',
+		set: 'units',
+		display_group: '!LOC:units',
+		display_sub_group: '!LOC:unit selection',
+		default: ''
+	};
+
+
+	/* MODELESS COMMANDS ----------------*/
+	["move",
+	"attack",
+	"assist",
+	"repair",
+	"reclaim",
+	"patrol",
+	"unload",
+	"load",
+	"alt_fire",
+	"alt_fire_or_unload"
+	].forEach(function(command) {
+		api.settings.definitions.keyboard.settings["command_modeless_" + command] = {
+			title: '!LOC:modeless ' + command.replace(/_/g, " "),
+			type: 'keybind',
+			set: 'units',
+			display_group: '!LOC:units',
+			display_sub_group: '!LOC:unit commands',
+			default: ''
+		};
+	});
+
+	api.settings.definitions.keyboard.settings["command_modeless_ping"] = {
+		title: '!LOC:modeless ping',
+		type: 'keybind',
+		set: 'general',
+		display_group: '!LOC:general',
+		display_sub_group: '!LOC:alerts',
+		default: ''
+	};
 })()
