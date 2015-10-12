@@ -12,6 +12,11 @@ Before: ![](http://i.cubeupload.com/jROT7r.png)
 
 After: ![](http://i.cubeupload.com/Gk7hR6.png)
 
+Also includes minor fixes:
+
+- System Editor's incorrect placement of hotkey messages and build bars when logged in.
+- Uberbar being one pixel scrollable when a chat exists.
+
 
 ### Expanded Hotkeys
 
@@ -36,7 +41,7 @@ Hides the splash screen when launching the game. So you can get back to playing 
 
 
 ### Fabricator commander
-Adds the commander to the fabricator grouping, so it's included in idle alerts and idel fabricator selecting.
+Adds the commander to the fabricator grouping, so it's included in idle alerts and fabricator selecting.
 
 ![](http://i.cubeupload.com/tBuK0U.png)
 

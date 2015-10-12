@@ -1,0 +1,7 @@
+/* Fix for the scrollable single pixel. */
+.div-win {
+	border-bottom-width: 0 !important;
+}
+.div-social-canvas {
+	bottom: 35px !important;
+}
