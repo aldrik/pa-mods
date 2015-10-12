@@ -79,6 +79,15 @@
 		default: ''
 	};
 
+	api.settings.definitions.keyboard.settings["select_idle_factories_on_screen_or_all_factories"] = {
+		title: '!LOC:select idle factories on screen and all factories on double press',
+		type: 'keybind',
+		set: 'units',
+		display_group: '!LOC:units',
+		display_sub_group: '!LOC:unit selection',
+		default: ''
+	};
+
 	api.settings.definitions.keyboard.settings["toggle_poll_lock"] = {
 		title: '!LOC:toggle poll lock',
 		type: 'keybind',

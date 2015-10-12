@@ -103,6 +103,10 @@
 		}
 	})();
 
+	action_sets.gameplay["select_idle_factories_on_screen_or_all_factories"]=input.doubleTap(
+		api.select.allIdleFactoriesOnScreen,
+		api.select.allFactories);
+
 
 	/* DOUBLE TAP SELECTION FIX ---*/
 	var dt_selects = {
