@@ -29,10 +29,14 @@ Extends the vanilla hotkeys system a little:
 - Select all idle fabricators.
 - Toggle chronocam (jumps back in time with rapid consecutive key presses).
 - Also removes the annoying prompt when deleting units & structures.
+
+Also includes the following game fixes:
 - Makes the ammo group accessible.
-- [Fix for the bug with double pressing recall command groups not working][alphaBug].
+- [Stops the issue with double pressing recall command groups][alphaBug].
+- [Fixes zooming from the celestial view][4025].
 
 [alphaBug]: https://forums.uberent.com/threads/hotfix-build-83796-with-release-build-82834-is-live.68993/page-9#post-1094588
+[4025]: http://pa.lennardf1989.com/Tracker/index.php?do=details&task_id=4025
 
 
 ### No splash

@@ -19,6 +19,24 @@
 	};
 
 
+	/* FIX FOR BUG: FS#4025 -------*/
+	var setZoom = api.camera.setZoom;
+	api.camera.setZoom = function(zoom, smooth) {
+		var value = setZoom.apply(this, arguments);
+		if (zoom === "celestial") api.camera.zoom(-1);
+		return value;
+	};
+
+	var celestial_hover = handlers.celestial_hover;
+	handlers.celestial_hover = function(payload) {
+		api.camera.zoom(-1);
+
+		handlers.celestial_hover = celestial_hover;
+		return celestial_hover.apply(handlers, arguments);
+	};
+
+
+
 	/* BUILD ITEMS ----------------*/
 	var regular_build = api.unit.build;
 	var immediate_build = function(spec, count) {
