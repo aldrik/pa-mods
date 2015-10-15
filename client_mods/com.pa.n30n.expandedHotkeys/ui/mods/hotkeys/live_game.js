@@ -262,14 +262,14 @@
 		};
 	});
 
-	action_sets.gameplay.command_modeless_alt_fire_or_unload = function(event) {
+	action_sets.gameplay.command_modeless_alt_fire_or_load = function(event) {
 		if (model.allowedCommands["FireSecondaryWeapon"]) {
 			return action_sets.gameplay.command_modeless_fire_secondary_weapon(event);
 		} else {
-			return action_sets.gameplay.command_modeless_unload(event);
+			return action_sets.gameplay.command_modeless_load(event);
 		}
 	};
-	action_sets.gameplay["command_modeless_alt_fire_or_unload_shift"] = action_sets.gameplay["command_modeless_alt_fire_or_unload"];
+	action_sets.gameplay["command_modeless_alt_fire_or_load_shift"] = action_sets.gameplay["command_modeless_alt_fire_or_load"];
 
 	var inputmap_reload = globalHandlers["inputmap.reload"];
 	globalHandlers["inputmap.reload"] = function() {

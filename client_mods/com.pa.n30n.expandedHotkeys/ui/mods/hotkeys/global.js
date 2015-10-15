@@ -108,7 +108,7 @@
 	"unload",
 	"load",
 	"alt_fire",
-	"alt_fire_or_unload"
+	"alt_fire_or_load"
 	].forEach(function(command) {
 		api.settings.definitions.keyboard.settings["command_modeless_" + command] = {
 			title: '!LOC:modeless ' + command.replace(/_/g, " "),
