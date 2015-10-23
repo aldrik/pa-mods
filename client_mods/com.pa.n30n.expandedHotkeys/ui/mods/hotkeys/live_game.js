@@ -78,17 +78,28 @@
 		}
 	});
 
-	action_sets.gameplay["clear_build_queue"] = function() {
-		/* Clear build queue, while allowing already started units to complete. */
+	action_sets.gameplay["clear_build_queue"] = input.doubleTap(function() {
+		/* Clear factory build queue(s), while allowing already started units to complete. */
+		var factory = /(unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
 		var selection = model.selection();
-		if (selection) {
+		if (!selection) {
+			return;
+		}
+		else if (factory.test(Object.keys(selection.spec_ids)[0])) {
 			var build_orders = selection.build_orders;
 			for (var spec in build_orders) {
 				api.unit.cancelBuild(spec, build_orders[spec], true);
 			}
 			api.audio.playSound('/SE/UI/UI_factory_remove_from_queue');
 		}
-	}
+		else {
+			model.setCommandIndex(-1);
+		}
+	},
+	function() {
+		// Stop command on double press.
+		model.setCommandIndex(-1);
+	});
 
 	model.maybeDeleteUnits = function definitelyDeleteUnits() {
 		/* Immediately delete without a prompt. */
