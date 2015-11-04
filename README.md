@@ -52,7 +52,7 @@ Adds the commander to the fabricator grouping, so it's included in idle alerts a
 
 ### Don't Look at me!
 
-Stops the camera from moving over and zooming on the commander when spawning.
+Stops the camera from moving over and zooming on the commander when spawning. Also stops the automatic creation of the camera anchor and control group.
 
 
 ### Continuous build stance
