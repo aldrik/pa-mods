@@ -1,0 +1,19 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.cheese_commander",
+	"display_name": "Cheese - Commander icon",
+	"description": "It's cheese, duh!",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2016/02/09",
+	"build": "89528",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"ui",
+		"in-game",
+		"client-mod",
+		"Strategic-icons"
+	],
+	"icon": "https://raw.githubusercontent.com/aldrik/pa-mods/master/client_mods/com.pa.n30n.cheese_commander/ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_commander.png"
+}
