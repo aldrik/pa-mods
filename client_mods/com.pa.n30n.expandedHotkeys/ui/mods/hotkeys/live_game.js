@@ -80,7 +80,7 @@
 
 	action_sets.gameplay["clear_build_queue"] = input.doubleTap(function() {
 		/* Clear factory build queue(s), while allowing already started units to complete. */
-		var factory = /(unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
+		var factory = /(l_orbital_dropper|unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
 		var selection = model.selection();
 		if (!selection) {
 			return;

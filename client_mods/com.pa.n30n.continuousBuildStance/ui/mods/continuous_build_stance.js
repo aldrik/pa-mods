@@ -1,6 +1,6 @@
 (function() {
 	// var original = handlers.selection;
-	var factory = /(unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
+	var factory = /(l_orbital_dropper|unit_cannon|orbital_launcher|factory)(_adv)?.json$/;
 	model.selection.subscribe(function buildStanceContinuous(payload) {
 		/* Upon selecting an idle factory set build stance to continuous. */
 		if (payload && model.mode() !== "select") {

@@ -4,7 +4,7 @@
 	"display_name": "Continuous build stance",
 	"description": "If a selection consists of only idle factories, set them to continuous build stance.",
 	"author": "N30N",
-	"version": "1.1",
+	"version": "1.2",
 	"date": "2015/06/11",
 	"build": "82834",
 	"signature": "not yet implemented",
