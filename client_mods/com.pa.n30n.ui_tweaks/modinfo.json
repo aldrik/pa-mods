@@ -14,22 +14,22 @@
 	],
 	"scenes": {
 		"live_game": [
-			"coui://ui/mods/hideControlGroupBar.css"
+			"coui://ui/mods/ui_tweaks/hide_control_group_bar.css"
 		],
 		"live_game_selection": [
-			"coui://ui/mods/selection.css"
+			"coui://ui/mods/ui_tweaks/selection.css"
 		],
 		"live_game_control_group_bar": [
-			"coui://ui/mods/idel_only.css"
+			"coui://ui/mods/ui_tweaks/idel_only.css"
 		],
 		"live_game_action_bar": [
-			"coui://ui/mods/power_and_continuous_build_stance.css"
+			"coui://ui/mods/ui_tweaks/power_and_continuous_build_stance.css"
 		],
 		"main": [
-			"coui://ui/mods/system_editor_fix.css"
+			"coui://ui/mods/ui_tweaks/system_editor_fix.css"
 		],
 		"uberbar": [
-			"coui://ui/mods/uberbar_fix.css"
+			"coui://ui/mods/ui_tweaks/uberbar_fix.css"
 		]
 	}
 }

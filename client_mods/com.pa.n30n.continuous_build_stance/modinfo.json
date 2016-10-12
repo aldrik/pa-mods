@@ -14,7 +14,7 @@
 	],
 	"scenes": {
 		"live_game": [
-			"coui://ui/mods/continuous_build_stance.js"
+			"coui://ui/mods/continuous_build_stance/live_game.js"
 		]
 	}
 }

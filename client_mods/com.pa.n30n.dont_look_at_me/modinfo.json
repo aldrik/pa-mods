@@ -14,7 +14,7 @@
 	],
 	"scenes": {
 		"live_game": [
-			"coui://ui/mods/dontLookAtMe.js"
+			"coui://ui/mods/dont_look_at_me/live_game.js"
 		]
 	}
 }

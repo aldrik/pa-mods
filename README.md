@@ -1,8 +1,7 @@
 # pa-mods
-Mods that make playing [Planetary Annihilation][pa] more enjoyable. They can be installed using the [PA Mod Manager (PAMM)][pamm].
+My mods that make playing [Planetary Annihilation][pa] even more enjoyable. They can be installed using the in-game community mod manager.
 
 [pa]: http://www.uberent.com/pa/
-[pamm]: https://forums.uberent.com/threads/pa-mod-manager-pamm-cross-platform.59992/
 
 ### UI Tweaks
 

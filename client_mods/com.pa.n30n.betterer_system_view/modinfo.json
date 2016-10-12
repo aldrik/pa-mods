@@ -14,8 +14,8 @@
 	],
 	"scenes": {
 		"live_game_planets": [
-			"coui://ui/mods/dBetterSystemView.css",
-			"coui://ui/mods/dBetterSystemView.js"
+			"coui://ui/mods/betterer_system_view/live_game_planets.css",
+			"coui://ui/mods/betterer_system_view/live_game_planets.js"
 		]
 	}
 }
