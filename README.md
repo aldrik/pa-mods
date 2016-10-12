@@ -54,6 +54,11 @@ Stops the camera from moving over and zooming on the commander when spawning. Al
 If a selection consists of only idle factories, set them to continuous build stance.
 
 
+### Relative zoom speed
+
+Adjusts the zoom speed relative to the planet radius.
+
+
 ## Other recommended mods
 
 - [PA Stats](https://forums.uberent.com/threads/rel-pa-stats-86422.50690/)

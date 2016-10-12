@@ -1,0 +1,20 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.relativeZoom",
+	"display_name": "Relative Zoom Speed",
+	"description": "Adjusts the zoom speed relative to the planet radius.",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2016/10/12",
+	"build": "89755",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"ui", "in-game"
+	],
+	"scenes": {
+		"live_game": [
+			"coui://ui/mods/relative_zoom/live_game.js"
+		]
+	}
+}
