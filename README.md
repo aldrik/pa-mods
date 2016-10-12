@@ -38,11 +38,6 @@ Also includes the following game fixes:
 [4025]: http://pa.lennardf1989.com/Tracker/index.php?do=details&task_id=4025
 
 
-### No splash
-
-Hides the splash screen when launching the game. So you can get back to playing quicker.
-
-
 ### Fabricator commander
 Adds the commander to the fabricator grouping, so it's included in idle alerts and fabricator selecting.
 
@@ -57,20 +52,6 @@ Stops the camera from moving over and zooming on the commander when spawning. Al
 ### Continuous build stance
 
 If a selection consists of only idle factories, set them to continuous build stance.
-
-
-### Betterer system view
-
-Adds metal indicators to the system panel.
-
-Classic      | [Better][BSV]      | Betterer
------------- | ------------------ | -------------
-![][classic] | ![][better]        | ![][betterer]
-
-[BSV]: https://forums.uberent.com/threads/rel-better-system-view-69721.52922/
-[classic]: http://i.cubeupload.com/iqstiN.png
-[better]: http://i.cubeupload.com/wBDhCM.png
-[betterer]: http://i.cubeupload.com/AXhyjh.png
 
 
 ## Other recommended mods
