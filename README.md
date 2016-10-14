@@ -1,7 +1,11 @@
 # pa-mods
 My mods that make playing [Planetary Annihilation][pa] even more enjoyable. They can be installed using the in-game community mod manager.
 
+All code can be used under the [WTFPLv2] and assets (such as maps) under the [CC-BYv4].
+
 [pa]: http://www.uberent.com/pa/
+[CC-BYv4]: https://creativecommons.org/licenses/by/4.0/
+[WTFPLv2]: http://www.wtfpl.net/txt/copying/
 
 ### UI Tweaks
 
@@ -63,7 +67,6 @@ Adjusts the zoom speed relative to the planet radius.
 
 - [PA Stats](https://forums.uberent.com/threads/rel-pa-stats-86422.50690/)
 - [Optimise User Tag Map Mod to improve startup](https://forums.uberent.com/threads/wip-optimise-user-tag-map-mod-to-improve-startup.63917/)
-- [System Sharing](https://forums.uberent.com/threads/rel-client-system-sharing-v2.69117/)
 - [No Default System](https://forums.uberent.com/threads/rel-no-default-system-1-0-1-86422.68589/)
 - [Combat fabricator group deselect](https://forums.uberent.com/threads/combat-fabricator-group-deselect.69462/)
 - [Sunshine mod](https://forums.uberent.com/threads/alphas-particle-effect-workshop.68427/page-5#post-1098662)
