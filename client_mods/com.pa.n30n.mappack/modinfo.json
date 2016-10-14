@@ -1,0 +1,17 @@
+{
+	"context": "client",
+	"identifier": "com.pa.n30n.mappack",
+	"display_name": "N30N's mappack",
+	"description": "My scrubby maps.",
+	"author": "N30N",
+	"version": "1.0",
+	"date": "2016/10/14",
+	"build": "89755",
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"dependencies": ["com.pa.conundrum.cShareSystems"],
+	"category": ["mappack"],
+	"scenes": {
+		"load_planet": ["coui://ui/mods/n30n_mappack/maplist.js"]
+	}
+}
