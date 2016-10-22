@@ -1,6 +1,6 @@
 (function() {
 	resetZoom = function() {
-		var zoom_speed = api.settings.data.camera.zoom_speed;
+		var zoom_speed = api.settings.data.camera.zoom_speed || 40;
 		engine.call("set_camera_zoom_speed", zoom_speed / 10);
 		// console.log("zoom reset");
 	}
@@ -12,7 +12,7 @@
 			} else {
 				var scale_factor = 475;
 				var radius = celestial_view.radius();
-				var zoom_speed = api.settings.data.camera.zoom_speed;
+				var zoom_speed = api.settings.data.camera.zoom_speed || 40;
 				engine.call("set_camera_zoom_speed", (radius / scale_factor * zoom_speed) / 10);
 				// console.log("set_camera_zoom_speed", (radius / scale_factor * zoom_speed) / 10);
 			}
