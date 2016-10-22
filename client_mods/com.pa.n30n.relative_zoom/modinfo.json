@@ -4,7 +4,7 @@
 	"display_name": "Relative Zoom Speed",
 	"description": "Adjusts the zoom speed relative to the planet radius.",
 	"author": "N30N",
-	"version": "1.0",
+	"version": "1.1",
 	"date": "2016/10/12",
 	"build": "89755",
 	"signature": "not yet implemented",
