@@ -54,7 +54,7 @@
 
 
 	/* FILTER SELECTION -----------*/
-	["bot", "tank", "air", "naval", "orbital", "advanced", "fabber"].forEach(function(type) {
+	["bot", "tank", "air", "naval", "orbital", "advanced", "fabber", "AirDefense"].forEach(function(type) {
 		action_sets.gameplay["selection_filter_" + type] = function() {
 			api.select.fromSelectionWithTypeFilter(type, null, false);
 		};
