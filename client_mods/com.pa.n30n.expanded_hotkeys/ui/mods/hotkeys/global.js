@@ -37,7 +37,7 @@
 
 
 	/* FILTER SELECTION -----------*/
-	["bot", "tank", "air", "naval", "orbital", "advanced", "fabber"].forEach(function(type) {
+	["bot", "tank", "air", "naval", "orbital", "advanced", "fabber", "AirDefense"].forEach(function(type) {
 		api.settings.definitions.keyboard.settings["selection_filter_" + type] = {
 			title: 'selection filter ' + type,
 			type: 'keybind',
