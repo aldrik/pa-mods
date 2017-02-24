@@ -8,7 +8,7 @@
 	"max_range": 125,
 	"yaw_rate": 120,
 	"pitch_rate": 360,
-	"yaw_range": 90,
+	"yaw_range": 180,
 	"pitch_range": 90,
 	"auto_attack": true,
 	"firing_standard_deviation": 1.0,
