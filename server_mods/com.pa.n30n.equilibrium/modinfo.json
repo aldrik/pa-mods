@@ -1,0 +1,17 @@
+{
+	"context": "server",
+	"identifier": "com.pa.n30n.equilibrium",
+	"display_name": "Equilibrium",
+	"description": "The community MLA (re)balance, to make all units viable.",
+	"author": "N30N",
+	"version": "0.1",
+	"date": "2017/02/24",
+	"build": "99377",
+	"priority": "99",
+	"titansOnly": true,
+	"signature": "not yet implemented",
+	"forum": "https://github.com/aldrik/pa-mods",
+	"category": [
+		"server-mod"
+	]
+}
