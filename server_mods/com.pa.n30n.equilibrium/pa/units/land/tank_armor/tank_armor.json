@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "!LOC:Inferno",
 	"description": "!LOC:Flame tank- Short ranged, heavy armored vehicle.",
-	"max_health": 1000,
+	"max_health": 1200,
 	"build_metal_cost": 225,
 	"attachable": {
 		"offsets": {
