@@ -3,7 +3,7 @@
 	"display_name": "Ant",
 	"description": "!LOC:Light tank- Well-rounded. Reliable. Attacks land and sea targets.",
 	"max_health": 250,
-	"build_metal_cost": 150,
+	"build_metal_cost": 125,
 	"attachable": {
 		"offsets": {
 			"root": [
@@ -36,7 +36,7 @@
 		"acceleration": 100,
 		"brake": 100,
 		"move_speed": 10,
-		"turn_speed": 90
+		"turn_speed": 135
 	},
 	"physics": {
 		"radius": 4
