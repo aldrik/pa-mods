@@ -3,7 +3,7 @@
 	"display_name": "Atlas",
 	"description": "!LOC:Seismic Titan- Devastating damage to everything nearby. Amphibious. Attacks land, sea, and undersea targets.",
 	"max_health": 40000,
-	"build_metal_cost": 30000,
+	"build_metal_cost": 20000,
 	"atrophy_rate": 200.0,
 	"atrophy_cool_down": 15.0,
 	"wreckage_health_frac": 0.7,
