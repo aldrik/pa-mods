@@ -34,7 +34,7 @@
 		"UNITTYPE_Commander",
 		"UNITTYPE_Construction",
 		"UNITTYPE_Mobile",
-		"UNITTYPE_Offense",
+		"UNITTYPE_Fabber",
 		"UNITTYPE_Land",
 		"UNITTYPE_NoBuild"
 	],
