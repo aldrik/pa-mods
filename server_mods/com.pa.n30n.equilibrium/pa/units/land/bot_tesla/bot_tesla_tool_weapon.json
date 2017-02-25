@@ -7,7 +7,7 @@
 	"ammo_demand": 200,
 	"ammo_per_shot": 400,
 	"idle_aim_delay": 3.0,
-	"max_range": 65,
+	"max_range": 70,
 	"yaw_rate": 360,
 	"pitch_rate": 360,
 	"yaw_range": 180,
