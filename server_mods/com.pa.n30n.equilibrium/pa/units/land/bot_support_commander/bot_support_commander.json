@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "!LOC:Colonel",
 	"description": "!LOC:Proxy Commander -- Builds advanced structures. Durable. High damage. Attacks everything but orbital.",
-	"strategic_icon_priority": 0,
+	"strategic_icon_priority": 1,
 	"max_health": 8000,
 	"build_metal_cost": 7000,
 	"buildable_types": "Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot",
