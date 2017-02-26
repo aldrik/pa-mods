@@ -4,7 +4,7 @@
 	"description": "!LOC:Advanced Support Fabricator- Repairs much faster. Can build turrets in addition to mines.",
 	"max_health": 150,
 	"spawn_layers": "WL_LandHorizontal",
-	"build_metal_cost": 1200,
+	"build_metal_cost": 750,
 	"attachable": {
 		"offsets": {
 			"root": [
