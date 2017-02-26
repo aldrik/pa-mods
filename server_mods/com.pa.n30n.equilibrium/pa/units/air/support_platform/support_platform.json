@@ -1,0 +1,195 @@
+{
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"display_name": "!LOC:Angel",
+	"description": "!LOC:Support Platform- Repairs nearby units. Intercepts homing missiles. Does not attack.",
+	"max_health": 1000,
+	"build_metal_cost": 5500,
+	"attachable": {
+		"offsets": {
+			"root": [
+				0,
+				0,
+				0
+			]
+		}
+	},
+	"unit_types": [
+		"UNITTYPE_Air",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_MissileDefense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild"
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/fab"
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+			"effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_muzzle02"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+			"effect_scale": 0.75
+		}
+	},
+	"audio": {
+		"loops": {
+			"build": {
+				"cue": "/SE/Construction/Fab_contruction_beam_loop",
+				"flag": "build_target_changed",
+				"should_start_func": "has_build_target",
+				"should_stop_func": "no_build_target"
+			},
+			"move": {
+				"cue": "/SE/Movement/air/fab_air_loop_T2",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving_laterally",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/fabber_T2"
+		}
+	},
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Assist",
+		"ORDER_Repair",
+		"ORDER_Assist"
+	],
+	"navigation": {
+		"type": "air",
+		"acceleration": 30,
+		"brake": 20,
+		"move_speed": 30,
+		"turn_speed": 180,
+		"vertical_speed": 100,
+		"hover_time": -1.0
+	},
+	"physics": {
+		"radius": 5,
+		"gravity_scalar": 0.001
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/air/support_platform/support_platform.papa",
+		"animations": {
+			"fly": "/pa/units/air/support_platform/support_platform_anim_fly.papa",
+			"idle": "/pa/units/air/support_platform/support_platform_anim_idle.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/support_platform_anim_tree.json"
+	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/air/support_platform/support_platform_build_arm.json",
+			"record_index": 0,
+			"aim_bone": "bone_pitch"
+		},
+		{
+			"spec_id": "/pa/units/air/support_platform/support_platform_tool_interception.json",
+			"record_index": 1,
+			"fire_event": "fired0",
+			"aim_bone": "socket_muzzle02"
+		}
+	],
+	"fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+			"bone": "bone_engine01",
+			"offset": [
+				0.776,
+				0,
+				-1.356
+			],
+			"orientation": [
+				0,
+				90,
+				0
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+			"bone": "bone_engine02",
+			"offset": [
+				0.776,
+				0,
+				-1.356
+			],
+			"orientation": [
+				0,
+				90,
+				0
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+			"bone": "bone_engine03",
+			"offset": [
+				0.776,
+				0,
+				-1.356
+			],
+			"orientation": [
+				0,
+				90,
+				0
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+			"bone": "bone_engine04",
+			"offset": [
+				0.776,
+				0,
+				-1.356
+			],
+			"orientation": [
+				0,
+				90,
+				0
+			]
+		},
+		{
+			"type": "build",
+			"filename": "/pa/effects/specs/fab_combat_spray.pfx",
+			"bone": "socket_muzzle01",
+			"offset": [
+				0,
+				0,
+				0
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		}
+	],
+	"selection_icon": {
+		"diameter": 20.0
+	},
+	"TEMP_texelinfo": 10.4837,
+	"mesh_bounds": [
+		5,
+		5,
+		3
+	]
+}
