@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Angel",
 	"description": "!LOC:Support Platform- Repairs nearby units. Intercepts homing missiles. Does not attack.",
 	"max_health": 1000,
-	"build_metal_cost": 5500,
+	"build_metal_cost": 2500,
 	"attachable": {
 		"offsets": {
 			"root": [
