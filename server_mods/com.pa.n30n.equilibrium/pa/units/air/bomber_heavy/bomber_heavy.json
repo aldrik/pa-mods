@@ -1,0 +1,292 @@
+{
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"display_name": "!LOC:Wyrm",
+	"description": "!LOC:Siege Bomber- Durable. Slow. Devastating damage. Attacks land and sea targets.",
+	"max_health": 3000,
+	"build_metal_cost": 3300,
+	"unit_types": [
+		"UNITTYPE_Bomber",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Air",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild"
+	],
+	"guard_radius": 120,
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "air",
+		"acceleration": 10,
+		"brake": 20,
+		"move_speed": 20,
+		"turn_speed": 110,
+		"dodge_radius": 0,
+		"dodge_multiplier": 0.0,
+		"aggressive_distance": 50.0,
+		"aggressive_height": 100.0,
+		"wobble_factor": 0.05,
+		"wobble_speed": 0.1,
+		"bank_factor": 0.25
+	},
+	"physics": {
+		"radius": 6,
+		"gravity_scalar": 1,
+		"push_sideways": false,
+		"allow_pushing": false,
+		"air_friction": 1.0
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/air/bomber_heavy/bomber_heavy.papa",
+		"animations": {
+			"fly": "/pa/units/air/bomber_heavy/bomber_heavy_anim_fly.papa",
+			"idle": "/pa/units/air/bomber_heavy/bomber_heavy_anim_idle.papa",
+			"build": "/pa/units/air/bomber_heavy/bomber_heavy_anim_build.papa",
+			"deploy": "/pa/units/air/bomber_heavy/bomber_heavy_anim_deploy.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/bomber_heavy_anim_tree.json"
+	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/air/bomber_heavy/bomber_heavy_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root"
+		}
+	],
+	"death_weapon": {
+		"air_ammo_spec": "/pa/ammo/air_pbaoe/air_pbaoe.json"
+	},
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/air/bomber_siege_fire"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+			"effect_scale": 1.5
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_large_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-1.641,
+				5.37,
+				3.286
+			],
+			"orientation": [
+				0.0,
+				180,
+				0.0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_large_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-1.641,
+				5.37,
+				-3.286
+			],
+			"orientation": [
+				0.0,
+				180,
+				0.0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				1.516,
+				-10.98,
+				0.0
+			],
+			"orientation": [
+				0.0,
+				180,
+				0.0
+			]
+		},
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-0.278,
+				-10.98,
+				0.0
+			],
+			"orientation": [
+				0.0,
+				180,
+				0.0
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+			"bone": "bone_thrusters",
+			"offset": [
+				3.697,
+				0.727,
+				0.0
+			],
+			"orientation": [
+				0.0,
+				0.0,
+				0.0
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+			"bone": "bone_thrusters",
+			"offset": [
+				-3.697,
+				0.727,
+				0.0
+			],
+			"orientation": [
+				0.0,
+				0.0,
+				0.0
+			]
+		}
+	],
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/air_bomber_siege_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving_laterally",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/bomber_T2"
+		}
+	},
+	"headlights": [
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [
+				0,
+				0,
+				0
+			],
+			"orientation": [
+				-90.0,
+				-20.0,
+				0.0
+			],
+			"near_width": 6.5,
+			"near_height": 6.5,
+			"near_distance": 8.0,
+			"far_distance": 65.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 4.0,
+			"bone": "bone_body",
+			"shadow_resolution": 128
+		}
+	],
+	"lamps": [
+		{
+			"offset": [
+				4.796,
+				10.41,
+				0.0
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 3.0,
+			"bone": "bone_body"
+		},
+		{
+			"offset": [
+				-2.322,
+				10.41,
+				0.0
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 3.0,
+			"bone": "bone_body"
+		},
+		{
+			"offset": [
+				1.0,
+				-10.1,
+				1.69
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				0.0,
+				0.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_body"
+		},
+		{
+			"offset": [
+				1.0,
+				-10.1,
+				-1.69
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				0.0,
+				0.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_body"
+		}
+	],
+	"selection_icon": {
+		"diameter": 39.0
+	},
+	"TEMP_texelinfo": 10.4258,
+	"mesh_bounds": [
+		14,
+		7.5,
+		2.6
+	]
+}
