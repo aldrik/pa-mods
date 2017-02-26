@@ -7,7 +7,7 @@
 	"splash_damages_allies": false,
 	"initial_velocity": 500.0,
 	"max_velocity": 500.0,
-	"lifetime": 0.5,
+	"lifetime": 0.65,
 	"turn_rate": 180,
 	"model": {},
 	"events": {
