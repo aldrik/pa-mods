@@ -15,9 +15,5 @@
 		"WL_Seafloor",
 		"WL_WaterSurface",
 		"WL_Air"
-	],
-	"target_priorities": [
-		"Air & MissileDefense",
-		"Air & Offense - Fighter"
 	]
 }
