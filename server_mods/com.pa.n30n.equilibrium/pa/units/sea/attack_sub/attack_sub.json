@@ -17,9 +17,9 @@
 	"navigation": {
 		"type": "underwater",
 		"acceleration": 40,
-		"brake": 140,
-		"move_speed": 14,
-		"turn_speed": 60,
+		"brake": 15,
+		"move_speed": 15,
+		"turn_speed": 80,
 		"turn_accel": 30
 	},
 	"physics": {

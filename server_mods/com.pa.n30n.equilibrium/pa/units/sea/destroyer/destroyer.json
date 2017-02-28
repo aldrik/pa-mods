@@ -20,11 +20,11 @@
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "deepwater",
-		"acceleration": 30,
-		"brake": 90,
-		"move_speed": 9,
-		"turn_speed": 45,
-		"turn_accel": 15,
+		"acceleration": 15,
+		"brake": 8,
+		"move_speed": 17,
+		"turn_speed": 50,
+		"turn_accel": 25,
 		"park_stamp_type": "box",
 		"park_stamp_cost": 20
 	},
