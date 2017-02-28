@@ -16,11 +16,11 @@
 		"died": {
 			"audio_cue": "/SE/Impacts/shell_bullet",
 			"effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_hit.pfx",
-			"effect_scale": 0.75
+			"effect_scale": 0.5
 		}
 	},
 	"fx_trail": {
-		"filename": "/pa/units/land/laser_defense_single/laser_defense_single_ammo_trail.pfx"
+		"filename": "/pa/effects/specs/tank_light_proj.pfx"
 	},
 	"physics": {
 		"ignore_gravity": true,
