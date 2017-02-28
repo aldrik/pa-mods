@@ -52,6 +52,7 @@
 		},
 		"animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json"
 	},
+	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
 	"tools": [
 		{
 			"spec_id": "/pa/units/land/unit_cannon/unit_cannon_tool_weapon.json",
