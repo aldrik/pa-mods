@@ -36,6 +36,7 @@
 		"UNITTYPE_Advanced",
 		"UNITTYPE_Artillery",
 		"UNITTYPE_FabAdvBuild",
+		"UNITTYPE_FabOrbBuild",
 		"UNITTYPE_Important"
 	],
 	"command_caps": [
