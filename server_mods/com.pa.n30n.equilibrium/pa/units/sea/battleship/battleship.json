@@ -22,7 +22,7 @@
 	"navigation": {
 		"type": "deepwater",
 		"acceleration": 30,
-		"brake": 80,
+		"brake": 3,
 		"move_speed": 8,
 		"turn_speed": 45,
 		"turn_accel": 15,
