@@ -1,0 +1,126 @@
+{
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"display_name": "!LOC:Kraken",
+	"description": "!LOC:Stealth Sub- Very high damage. Radar stealth. Attacks land, sea, and undersea targets.",
+	"max_health": 2100,
+	"build_metal_cost": 1800,
+	"spawn_layers": "WL_Underwater",
+	"mesh_bounds": [
+		5,
+		35,
+		5
+	],
+	"unit_types": [
+		"UNITTYPE_Naval",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Sub",
+		"UNITTYPE_FactoryBuild"
+	],
+	"navigation": {
+		"type": "underwater",
+		"acceleration": 40,
+		"brake": 120,
+		"move_speed": 12,
+		"turn_speed": 60,
+		"turn_accel": 20,
+		"dodge_radius": 10,
+		"dodge_multiplier": 1.0,
+		"wobble_factor": 0.0,
+		"wobble_speed": 0.0
+	},
+	"physics": {
+		"underwater": true,
+		"radius": 6
+	},
+	"recon": {
+		"observable": {
+			"layer": "underwater",
+			"ignore_radar": true
+		},
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/sea/nuclear_sub/nuclear_sub.papa",
+		"animations": {
+			"start": "/pa/units/sea/nuclear_sub/nuclear_sub_anim_start.papa",
+			"end": "/pa/units/sea/nuclear_sub/nuclear_sub_anim_end.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/nuclear_sub_anim_tree.json"
+	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/sea/nuclear_sub/nuclear_sub_tool_weapon.json",
+			"aim_bone": "socket_muzzle01",
+			"record_index": 0,
+			"fire_event": "fired0",
+			"muzzle_bone": "socket_muzzle01"
+		},
+		{
+			"spec_id": "/pa/units/sea/nuclear_sub/nuclear_sub_tool_weapon_missile.json",
+			"aim_bone": "socket_muzzle02",
+			"record_index": 1,
+			"fire_event": "fired1",
+			"muzzle_bone": [
+				"socket_muzzle02",
+				"socket_muzzle03",
+				"socket_muzzle04",
+				"socket_muzzle05"
+			]
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01",
+			"effect_scale": 5.0
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea_sub",
+			"effect_spec": "/pa/effects/specs/default_explosion_naval_sub_t2.pfx",
+			"effect_scale": 0.9
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/sea/nuclear_sub_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx"
+		}
+	],
+	"selection_icon": {
+		"diameter": 44.0
+	},
+	"TEMP_texelinfo": 16.0481
+}

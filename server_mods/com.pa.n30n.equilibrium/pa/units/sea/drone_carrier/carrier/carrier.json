@@ -1,0 +1,312 @@
+{
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"display_name": "!LOC:Typhoon",
+	"description": "!LOC:Drone Carrier- Builds and launches missile drones at enemies. Attacks land, air and sea targets.",
+	"max_health": 5000,
+	"build_metal_cost": 6500,
+	"spawn_layers": "WL_WaterSurface",
+	"mesh_bounds": [
+		7,
+		32,
+		7
+	],
+	"unit_types": [
+		"UNITTYPE_Naval",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild"
+	],
+	"physics": {
+		"shape": "sphere",
+		"radius": 3
+	},
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "deepwater",
+		"acceleration": 30,
+		"brake": 80,
+		"move_speed": 8,
+		"turn_speed": 45,
+		"turn_accel": 15
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/sea/drone_carrier/carrier/carrier.papa"
+	},
+	"nearby_target_tick_update_interval": 5,
+	"tools": [
+		{
+			"spec_id": "/pa/units/sea/drone_carrier/carrier/carrier_tool_weapon.json",
+			"aim_bone": "socket_muzzle",
+			"record_index": 0,
+			"fire_event": "fired",
+			"muzzle_bone": [
+				"socket_muzzle"
+			]
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/sea/drone_carrier_fire",
+			"effect_spec": "/pa/units/sea/drone_carrier/carrier/carrier_drone_launch.pfx bone_root"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea",
+			"effect_spec": "/pa/effects/specs/default_explosion_naval_t2.pfx",
+			"effect_scale": 1.25
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/sea/T2_missile_ship_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/sea/sea_large"
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/sea/drone_carrier/carrier/carrier_wake.pfx"
+		}
+	],
+	"headlights": [
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [
+				-2.539,
+				7.565,
+				11.364
+			],
+			"orientation": [
+				0.0,
+				60.0,
+				0.0
+			],
+			"near_width": 6.5,
+			"near_height": 6.5,
+			"near_distance": 8.0,
+			"far_distance": 35.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 3.0,
+			"bone": "bone_root",
+			"shadow_resolution": 128
+		}
+	],
+	"lamps": [
+		{
+			"offset": [
+				-2.539,
+				6.565,
+				11.364
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 3.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.873,
+				2.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.873,
+				-3.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.873,
+				-8.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.873,
+				-13.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.873,
+				-18.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				2.621,
+				-3.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				2.621,
+				-8.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				2.621,
+				-13.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				2.621,
+				-18.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				2.621,
+				-23.0,
+				4.5
+			],
+			"radius": 1.0,
+			"color": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		},
+		{
+			"offset": [
+				-3.025,
+				12.0,
+				11.305
+			],
+			"radius": 2.5,
+			"color": [
+				1.0,
+				0.0,
+				0.0
+			],
+			"intensity": 1.0,
+			"bone": "bone_root"
+		}
+	],
+	"selection_icon": {
+		"diameter": 46.0
+	},
+	"TEMP_texelinfo": 30.5603
+}
