@@ -11,7 +11,7 @@
 			0.0
 		]
 	},
-	"damage": 50,
+	"damage": 100,
 	"splash_damage": 20,
 	"splash_radius": 0.75,
 	"full_damage_splash_radius": 0.75,

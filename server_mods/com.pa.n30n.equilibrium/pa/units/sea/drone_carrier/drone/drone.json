@@ -1,17 +1,18 @@
 {
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
 	"display_name": "Squall",
-	"description": "Missile Drone-Fast, fragile, attacks land and air.",
-	"max_health": 40,
+	"description": "Missile Drone-Fast, fragile, attacks land, air and sea targets.",
+	"max_health": 80,
 	"build_metal_cost": 90,
-	"guard_radius": 200,
-	"passive_health_regen": -3,
+	"guard_radius": 350,
+	"passive_health_regen": -4,
 	"unit_types": [
 		"UNITTYPE_Scout",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Air",
 		"UNITTYPE_Basic"
 	],
+	"command_caps": ["ORDER_Attack"],
 	"guard_layer": "WL_AnyLayer",
 	"navigation": {
 		"type": "air",

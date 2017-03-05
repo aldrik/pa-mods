@@ -5,8 +5,8 @@
 	"ammo_capacity": 300,
 	"ammo_demand": 15,
 	"ammo_per_shot": 30,
-	"rate_of_fire": 2.0,
-	"max_range": 250,
+	"rate_of_fire": 3.0,
+	"max_range": 350,
 	"yaw_rate": 180,
 	"pitch_rate": 180,
 	"yaw_range": 0,
@@ -18,6 +18,7 @@
 	"target_layers": [
 		"WL_LandHorizontal",
 		"WL_WaterSurface",
+		"WL_Underwater",
 		"WL_Air"
 	]
 }
