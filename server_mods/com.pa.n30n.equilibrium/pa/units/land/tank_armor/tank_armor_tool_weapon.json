@@ -1,10 +1,10 @@
 {
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
 	"ammo_id": "/pa/units/land/tank_armor/tank_armor_ammo.json",
-	"rate_of_fire": 4,
+	"rate_of_fire": 5,
 	"idle_aim_delay": 0,
 	"max_range": 20,
-	"yaw_rate": 360,
+	"yaw_rate": 450,
 	"pitch_rate": 360,
 	"yaw_range": 180,
 	"pitch_range": 45,
