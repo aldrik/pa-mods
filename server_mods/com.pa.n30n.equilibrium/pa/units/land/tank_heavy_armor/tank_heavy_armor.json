@@ -2,8 +2,8 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "!LOC:Vanguard",
 	"description": "!LOC:Heavy tank- Advanced short range, heavily armored vehicle.",
-	"max_health": 5000,
-	"build_metal_cost": 1500,
+	"max_health": 6000,
+	"build_metal_cost": 1200,
 	"attachable": {
 		"offsets": {
 			"root": [
