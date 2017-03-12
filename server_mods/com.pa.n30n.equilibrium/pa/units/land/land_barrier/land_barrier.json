@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
 	"display_name": "!LOC:Wall",
 	"description": "!LOC:Very durable. Blocks units and protects from incoming fire.",
-	"max_health": 2000,
+	"max_health": 2400,
 	"build_metal_cost": 50,
 	"atrophy_rate": 20.0,
 	"atrophy_cool_down": 0.5,
