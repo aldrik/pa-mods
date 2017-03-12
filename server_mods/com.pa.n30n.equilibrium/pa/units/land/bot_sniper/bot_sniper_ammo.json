@@ -5,8 +5,8 @@
 	"splash_radius": 0,
 	"full_damage_splash_radius": 0,
 	"splash_damages_allies": false,
-	"initial_velocity": 500.0,
-	"max_velocity": 500.0,
+	"initial_velocity": 400.0,
+	"max_velocity": 400.0,
 	"lifetime": 0.65,
 	"turn_rate": 180,
 	"model": {
