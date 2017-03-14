@@ -1,5 +1,5 @@
 {
-	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"base_spec": "/pa/units/sea/base_sub/base_sub.json",
 	"display_name": "!LOC:Kraken",
 	"description": "!LOC:Stealth Sub- Very high damage. Radar stealth. Attacks land, sea, and undersea targets.",
 	"max_health": 2100,

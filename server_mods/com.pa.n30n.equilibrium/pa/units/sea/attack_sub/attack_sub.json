@@ -1,5 +1,5 @@
 {
-	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"base_spec": "/pa/units/sea/base_sub/base_sub.json",
 	"display_name": "!LOC:Barracuda",
 	"description": "!LOC:Submarine- High damage. Cannot be targeted by cannons. Attacks sea and undersea targets.",
 	"max_health": 550,

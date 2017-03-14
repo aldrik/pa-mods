@@ -1,0 +1,14 @@
+{
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"display_name": "Base Submarine",
+	"description": "Base Sub Description - If you're seeing this, something is wrong in your submarine.",
+	"wreckage_health_frac": 0.0,
+	"spawn_layers": "WL_Underwater",
+	"navigation": {
+		"type": "underwater"
+	},
+	"physics": {
+		"underwater": true,
+		"collision_layers": "WL_Underwater"
+	}
+}
