@@ -19,6 +19,9 @@
 		"/pa/units/air/fighter_adv/fighter_adv_ammo.json",
 		"/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_ammo.json",
 		"/pa/units/land/air_defense/air_defense_ammo.json",
+		"/pa/units/sea/frigate/frigate_ammo_aa.json",
+		"/pa/units/sea/missile_ship/missile_ship_aa_ammo.json",
+		"/pa/units/sea/drone_carrier/drone/drone_ammo.json",
 		"/pa/units/commanders/base_commander/base_commander_aa_ammo.json"
 	],
 	"target_layers": [
