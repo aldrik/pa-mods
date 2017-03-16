@@ -26,6 +26,7 @@
 		"UNITTYPE_Land",
 		"UNITTYPE_Basic",
 		"UNITTYPE_Hover",
+		"UNITTYPE_CannonBuildable",
 		"UNITTYPE_FactoryBuild"
 	],
 	"transportable": {
