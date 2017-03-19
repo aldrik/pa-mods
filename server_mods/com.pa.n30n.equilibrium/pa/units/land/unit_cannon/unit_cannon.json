@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Unit Cannon",
 	"description": "!LOC:Interplanetary Transport- Builds and launches up to 12 units at once anywhere in the system.",
 	"max_health": 18000,
-	"build_metal_cost": 10000,
+	"build_metal_cost": 7200,
 	"atrophy_rate": 140.0,
 	"atrophy_cool_down": 15.0,
 	"factory_cooldown_time": 3.0,
