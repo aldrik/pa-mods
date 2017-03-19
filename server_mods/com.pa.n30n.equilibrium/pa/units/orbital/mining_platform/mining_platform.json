@@ -11,7 +11,6 @@
 	"area_build_separation": 100,
 	"build_restrictions": "Terrainless",
 	"production": {
-		"energy": 9000,
 		"metal": 36
 	},
 	"storage": {
