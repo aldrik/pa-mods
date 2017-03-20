@@ -4,6 +4,7 @@
 	"strategic_icon_priority": 3,
 	"max_health": 5,
 	"build_metal_cost": 20,
+	"armor_type": "AT_Structure",
 	"wreckage_health_frac": 0.0,
 	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
 	"area_build_type": "Sphere",
