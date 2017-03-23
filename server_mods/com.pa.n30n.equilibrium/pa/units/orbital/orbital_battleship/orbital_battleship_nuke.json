@@ -1,0 +1,5 @@
+{
+	"base_spec": "/pa/units/orbital/mining_platform/mining_platform_nuke.json",
+	"damage": 2000,
+	"splash_radius": 175
+}

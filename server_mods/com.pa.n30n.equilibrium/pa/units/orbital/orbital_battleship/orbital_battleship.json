@@ -128,8 +128,8 @@
 		},
 		"died": {
 			"audio_cue": "/SE/Death/orbital",
-			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
-			"effect_scale": 2.5
+			"effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx",
+			"effect_scale": 0.7
 		},
 		"fired": {
 			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
@@ -260,6 +260,9 @@
 		"selection_response": {
 			"cue": "/SE/Selection/orbital/orbital"
 		}
+	},
+	"death_weapon":{
+		"ground_ammo_spec": "/pa/units/orbital/orbital_battleship/orbital_battleship_nuke.json"
 	},
 	"selection_icon": {
 		"diameter": 56.0,
