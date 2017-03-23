@@ -15,6 +15,7 @@
 	"target_layers": [
 		"WL_LandHorizontal",
 		"WL_WaterSurface",
+		"WL_Underwater",
 		"WL_Seafloor",
 		"WL_Air"
 	],
