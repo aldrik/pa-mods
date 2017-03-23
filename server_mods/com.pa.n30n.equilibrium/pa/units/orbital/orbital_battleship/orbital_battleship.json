@@ -1,0 +1,274 @@
+{
+	"base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+	"display_name": "!LOC:Omega",
+	"description": "!LOC:Orbital Battleship- Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
+	"build_metal_cost": 14000,
+	"max_health": 4000,
+	"gravwell_velocity_multiplier": 6.0,
+	"wreckage_health_frac": 0.0,
+	"spawn_layers": "WL_Orbital",
+	"attachable": {
+		"offsets": {
+			"root": [
+				0,
+				0,
+				0
+			]
+		}
+	},
+	"unit_types": [
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Orbital",
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Heavy",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild"
+	],
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Attack",
+		"ORDER_Assist"
+	],
+	"guard_layer": "WL_Orbital",
+	"navigation": {
+		"type": "orbital",
+		"acceleration": 30,
+		"brake": 80,
+		"move_speed": 15,
+		"turn_speed": 45,
+		"circle_min_time": 2,
+		"circle_max_time": 4,
+		"hover_time": -1.0,
+		"bank_factor": 1
+	},
+	"physics": {
+		"radius": 5,
+		"gravity_scalar": 0.001
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "orbital",
+					"channel": "sight",
+					"shape": "sphere",
+					"radius": 400
+				},
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/orbital/orbital_battleship/orbital_battleship.papa",
+		"animtree": "/pa/anim/anim_trees/orbital_battleship_anim_tree.json"
+	},
+	"nearby_target_tick_update_interval": 15,
+	"tools": [
+		{
+			"spec_id": "/pa/units/orbital/orbital_battleship/orbital_battleship_tool_weapon.json",
+			"aim_bone": "bone_turret01",
+			"record_index": 0,
+			"fire_event": "fired0",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_muzzle01",
+				"socket_muzzle02"
+			]
+		},
+		{
+			"spec_id": "/pa/units/orbital/orbital_battleship/orbital_battleship_tool_weapon.json",
+			"aim_bone": "bone_turret02",
+			"record_index": 1,
+			"fire_event": "fired1",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_muzzle03",
+				"socket_muzzle04"
+			]
+		},
+		{
+			"spec_id": "/pa/units/orbital/orbital_battleship/orbital_battleship_tool_weapon.json",
+			"aim_bone": "bone_turret03",
+			"record_index": 2,
+			"fire_event": "fired2",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_muzzle05",
+				"socket_muzzle06"
+			]
+		},
+		{
+			"spec_id": "/pa/units/orbital/orbital_battleship/orbital_battleship_tool_weapon.json",
+			"aim_bone": "bone_turret04",
+			"record_index": 3,
+			"fire_event": "fired3",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_muzzle07",
+				"socket_muzzle08"
+			]
+		},
+		{
+			"spec_id": "/pa/units/orbital/orbital_battleship/orbital_battleship_tool_weapon_ground.json",
+			"aim_bone": "socket_muzzle09",
+			"record_index": -1,
+			"muzzle_bone": "socket_muzzle09"
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/orbital",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+			"effect_scale": 2.5
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+			"effect_spec": ""
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02",
+			"effect_scale": 5.0
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle04",
+			"effect_scale": 5.0
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle05 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle06",
+			"effect_scale": 5.0
+		},
+		"fired3": {
+			"audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle07 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle08",
+			"effect_scale": 5.0
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				4,
+				21.7,
+				4.1
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				6.4,
+				20.5,
+				2.6
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				8.3,
+				15.5,
+				1.2
+			],
+			"orientation": [
+				0,
+				5,
+				10
+			]
+		},
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-4,
+				21.7,
+				4.1
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-6.4,
+				20.5,
+				2.6
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"type": "moving",
+			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"bone": "bone_body",
+			"offset": [
+				-8.3,
+				15.5,
+				1.2
+			],
+			"orientation": [
+				0,
+				0,
+				0
+			]
+		}
+	],
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/orbital/orbital_battleship_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/orbital/orbital"
+		}
+	},
+	"selection_icon": {
+		"diameter": 56.0,
+		"vertical_offset": -3.0
+	},
+	"mesh_bounds": [
+		25,
+		57,
+		9
+	],
+	"TEMP_texelinfo": 17.7177
+}
