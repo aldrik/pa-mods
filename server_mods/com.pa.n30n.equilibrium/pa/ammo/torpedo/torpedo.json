@@ -1,0 +1,40 @@
+{
+	"ammo_type": "AMMO_Projectile",
+	"flight_type": "Seeking",
+	"flight_layer": "Underwater",
+	"spawn_layers": "WL_Underwater",
+	"model": {
+		"filename": "/pa/units/sea/torpedo/torpedo.papa"
+	},
+	"fx_trail": {
+		"filename": "/pa/effects/specs/torpedo_proj_trail.pfx",
+		"offset": [
+			0.0,
+			0.8,
+			0.0
+		]
+	},
+	"physics": {
+		"radius": 1,
+		"gravity_scalar": 5,
+		"add_to_spatial_db": false,
+		"allow_underground": true
+	},
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/torpedo",
+			"effect_spec": "/pa/effects/specs/default_torpedo_explosion.pfx"
+		}
+	},
+	"damage": 50,
+	"lifetime": 8,
+	"initial_velocity": 40.0,
+	"max_velocity": 40.0,
+	"turn_rate": 45,
+	"cruise_height": 2,
+	"recon": {
+		"observable": {
+			"ignore_radar": true
+		}
+	}
+}
