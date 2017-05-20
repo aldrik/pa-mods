@@ -4,9 +4,9 @@
 	"splash_damage": 0,
 	"splash_radius": 0,
 	"cruise_height": 40,
-	"initial_velocity": 20.0,
+	"initial_velocity": 80.0,
 	"max_velocity": 80.0,
-	"turn_rate": 360,
+	"turn_rate": 45,
 	"lifetime": 15,
 	"max_health": 1,
 	"influence_radius": 400,
@@ -30,8 +30,7 @@
 			"ignores_LOS": true,
 			"stage_duration": 250,
 			"stage_turn_rate": 0,
-			"apply_thrust": false,
-			"rotates_to_velocity": false
+			"rotates_to_velocity": true
 		},
 		{
 			"ignores_gravity": true,
