@@ -35,7 +35,7 @@
 		"acceleration": 100,
 		"brake": 100,
 		"move_speed": 10,
-		"turn_speed": 135
+		"turn_speed": 90
 	},
 	"physics": {
 		"radius": 4
