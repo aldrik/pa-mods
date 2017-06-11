@@ -14,5 +14,6 @@
 		"WL_WaterSurface",
 		"WL_Underwater",
 		"WL_Seafloor"
-	]
+	],
+	"exclude_unit_types": "Hover"
 }
