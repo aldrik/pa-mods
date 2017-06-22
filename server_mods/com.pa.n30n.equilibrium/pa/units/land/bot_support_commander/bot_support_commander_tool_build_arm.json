@@ -16,6 +16,7 @@
 	],
 	"reclaim_layers": [
 		"WL_AnyHorizontalGroundOrWaterSurface",
+		"WL_Underwater",
 		"WL_Air"
 	],
 	"reclaim_types": [
