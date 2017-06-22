@@ -1,0 +1,26 @@
+{
+	"tool_type": "TOOL_BuildArm",
+	"max_range": 45,
+	"construction_demand": {
+		"energy": 1500,
+		"metal": 15
+	},
+	"yaw_rate": 50,
+	"pitch_rate": 50,
+	"pitch_range": 180,
+	"yaw_range": 180,
+	"assist_layers": [
+		"WL_AnyHorizontalGroundOrWaterSurface",
+		"WL_Air",
+		"WL_Underwater"
+	],
+	"reclaim_layers": [
+		"WL_AnyHorizontalGroundOrWaterSurface",
+		"WL_Air"
+	],
+	"reclaim_types": [
+		"Unit",
+		"Wreckage",
+		"Feature"
+	]
+}
