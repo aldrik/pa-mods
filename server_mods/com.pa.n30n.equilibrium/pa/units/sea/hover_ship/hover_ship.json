@@ -1,0 +1,275 @@
+{
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"display_name": "Kaiju",
+	"description": "!LOC:Hover Destroyer- Long-Range. Durable. Hover. Attacks land and sea targets.",
+	"build_metal_cost": 1500,
+	"max_health": 2000,
+	"spawn_layers": "WL_DeepWater",
+	"armor_type": "AT_Hover",
+	"mesh_bounds": [
+		4,
+		24,
+		7
+	],
+	"unit_types": [
+		"UNITTYPE_Naval",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Hover",
+		"UNITTYPE_FactoryBuild"
+	],
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "hover",
+		"acceleration": 30,
+		"brake": 110,
+		"move_speed": 11,
+		"turn_speed": 45,
+		"turn_accel": 15,
+		"park_stamp_type": "box",
+		"park_stamp_cost": 20
+	},
+	"physics": {
+		"shape": "sphere",
+		"radius": 3
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				},
+				{
+					"layer": "underwater",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 200
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/sea/hover_ship/hover_ship.papa",
+		"animations": {
+			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/hover_ship_anim_tree.json"
+	},
+	"nearby_target_tick_update_interval": 15,
+	"tools": [
+		{
+			"spec_id": "/pa/units/sea/hover_ship/hover_ship_tool_weapon.json",
+			"record_index": 0,
+			"fire_event": "fired0",
+			"aim_bone": "bone_pitch01",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle01",
+				"socket_rightMuzzle01"
+			]
+		},
+		{
+			"spec_id": "/pa/units/sea/hover_ship/hover_ship_tool_weapon.json",
+			"record_index": 1,
+			"fire_event": "fired1",
+			"aim_bone": "bone_pitch02",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle02",
+				"socket_rightMuzzle02"
+			]
+		},
+		{
+			"spec_id": "/pa/units/sea/hover_ship/hover_ship_tool_weapon_side.json",
+			"record_index": 2,
+			"fire_event": "fired2",
+			"aim_bone": "bone_pitch03",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle03",
+				"socket_rightMuzzle03"
+			]
+		},
+		{
+			"spec_id": "/pa/units/sea/hover_ship/hover_ship_tool_weapon_side.json",
+			"record_index": 3,
+			"fire_event": "fired3",
+			"aim_bone": "bone_pitch04",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle04",
+				"socket_rightMuzzle04"
+			]
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/sea/hover_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle01",
+			"effect_scale": 5.0
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/sea/hover_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle02",
+			"effect_scale": 5.0
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/sea/hover_small_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle03",
+			"effect_scale": 1.0
+		},
+		"fired3": {
+			"audio_cue": "/SE/Weapons/sea/hover_small_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle04 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle04",
+			"effect_scale": 1.0
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea_large",
+			"effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+			"effect_scale": 1.2
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [
+				1.89,
+				-11.64,
+				1.79
+			],
+			"orientation": [
+				0,
+				0,
+				-188.5
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_02.pfx",
+			"bone": "bone_root",
+			"offset": [
+				4.1,
+				-4.85,
+				2.36
+			],
+			"orientation": [
+				0,
+				0,
+				-19
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_02.pfx",
+			"bone": "bone_root",
+			"offset": [
+				3.96,
+				2.22,
+				1.72
+			],
+			"orientation": [
+				0,
+				0,
+				-10.75
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [
+				2.34,
+				10.47,
+				2.77
+			],
+			"orientation": [
+				0,
+				0,
+				203.8
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [
+				-1.89,
+				-11.64,
+				1.79
+			],
+			"orientation": [
+				0,
+				0,
+				8.5
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_02.pfx",
+			"bone": "bone_root",
+			"offset": [
+				-4.1,
+				-4.85,
+				2.36
+			],
+			"orientation": [
+				0,
+				0,
+				199
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_02.pfx",
+			"bone": "bone_root",
+			"offset": [
+				-3.96,
+				2.22,
+				1.72
+			],
+			"orientation": [
+				0,
+				0,
+				190.75
+			]
+		},
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [
+				-2.34,
+				10.47,
+				2.77
+			],
+			"orientation": [
+				0,
+				0,
+				-23.8
+			]
+		}
+	],
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/sea/hover_ship_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
+	"selection_icon": {
+		"diameter": 34.0
+	},
+	"TEMP_texelinfo": 22.1895
+}
