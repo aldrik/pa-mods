@@ -44,15 +44,6 @@
 			"rotates_to_velocity": true
 		},
 		{
-			"ignores_gravity": true,
-			"apply_thrust": true,
-			"ignores_LOS": true,
-			"stage_turn_rate": 270,
-			"stage_change_height": 25,
-			"stage_change_range": 50,
-			"rotates_to_velocity": true
-		},
-		{
 			"die_here": true
 		}
 	],
