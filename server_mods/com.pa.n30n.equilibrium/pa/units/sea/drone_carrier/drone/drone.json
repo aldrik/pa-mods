@@ -3,7 +3,7 @@
 	"display_name": "Squall",
 	"description": "Missile Drone-Fast, fragile, attacks land, air and sea targets.",
 	"max_health": 80,
-	"build_metal_cost": 90,
+	"build_metal_cost": 0,
 	"guard_radius": 450,
 	"passive_health_regen": -5,
 	"unit_types": [
