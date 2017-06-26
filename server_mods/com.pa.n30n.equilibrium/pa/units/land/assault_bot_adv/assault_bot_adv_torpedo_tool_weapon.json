@@ -1,6 +1,15 @@
 {
 	"base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
-	"ammo_id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo.json",
+	"ammo_id":[
+		{
+			"layer": "WL_Seafloor",
+			"id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo.json"
+		},
+		{
+			"layer": "WL_LandHorizontal",
+			"id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_land.json"
+		}
+	],
 	"spawn_layers": "WL_Underwater",
 	"rate_of_fire": 0.25,
 	"max_range": 160,
