@@ -16,6 +16,7 @@
 		}
 	},
 	"flight_type": "Seeking",
+	"flight_layer": "Underwater",
 	"turn_rate": 180,
 	"damage": 1250,
 	"splash_damage": 1250,
