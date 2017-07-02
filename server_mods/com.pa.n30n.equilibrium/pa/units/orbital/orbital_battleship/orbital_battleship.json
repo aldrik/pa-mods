@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
 	"display_name": "!LOC:Omega",
 	"description": "!LOC:Orbital Battleship- Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
-	"build_metal_cost": 14000,
+	"build_metal_cost": 8000,
 	"max_health": 4000,
 	"gravwell_velocity_multiplier": 6.0,
 	"wreckage_health_frac": 0.0,
