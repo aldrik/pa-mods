@@ -128,7 +128,7 @@
 		},
 		"died": {
 			"audio_cue": "/SE/Death/orbital",
-			"effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx",
+			"effect_spec": "/pa/effects/specs/orbital_battleship_explosion.pfx",
 			"effect_scale": 0.7
 		},
 		"fired": {
