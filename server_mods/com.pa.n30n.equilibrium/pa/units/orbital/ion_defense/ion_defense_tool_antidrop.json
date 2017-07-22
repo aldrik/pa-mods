@@ -16,6 +16,7 @@
 	"auto_task_type": "anti_entity",
 	"anti_entity_targets_units": false,
 	"anti_entity_targets": [
+		"/pa/units/orbital/orbital_probe/orbital_probe_ammo.json",
 		"/pa/units/land/unit_cannon/unit_cannon_deploy.json"
 	],
 	"target_layers": [

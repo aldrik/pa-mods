@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
 	"display_name": "Hermes",
-	"description": "!LOC:Space Probe- Fast. Cheap. Expendable. Provides ground vision. Does not attack.",
+	"description": "!LOC:Space Probe- Fast. Provides ground vision. Self-Destruct discharges a heavy damage artillery shot.",
 	"max_health": 50,
 	"build_metal_cost": 200,
 	"system_velocity_multiplier": 22.0,
@@ -26,6 +26,7 @@
 	"command_caps": [
 		"ORDER_Move",
 		"ORDER_Patrol",
+		"ORDER_Attack",
 		"ORDER_Assist"
 	],
 	"navigation": {
@@ -47,7 +48,7 @@
 					"layer": "surface_and_air",
 					"channel": "sight",
 					"shape": "capsule",
-					"radius": 200,
+					"radius": 105,
 					"uses_energy": true
 				},
 				{
@@ -61,7 +62,7 @@
 					"layer": "underwater",
 					"channel": "sight",
 					"shape": "capsule",
-					"radius": 200,
+					"radius": 105,
 					"uses_energy": true
 				}
 			]
@@ -79,6 +80,12 @@
 		},
 		"animtree": "/pa/anim/anim_trees/orbital_probe_anim_tree.json"
 	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/orbital/orbital_probe/orbital_probe_tool_weapon.json",
+			"muzzle_bone":"bone_body"
+		}
+	],
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/radar"
