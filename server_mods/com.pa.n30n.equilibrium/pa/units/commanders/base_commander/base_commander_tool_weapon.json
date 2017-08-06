@@ -11,6 +11,7 @@
 	"idle_aim_delay": 5,
 	"target_layers": [
 		"WL_LandHorizontal",
+		"WL_WaterSurface",
 		"WL_Seafloor"
 	],
 	"target_priorities": [

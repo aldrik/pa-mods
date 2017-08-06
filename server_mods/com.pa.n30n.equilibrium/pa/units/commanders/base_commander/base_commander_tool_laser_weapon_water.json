@@ -1,0 +1,9 @@
+{
+	"base_spec": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon_water.json",
+	"ammo_id": [
+		{
+			"layer": "WL_Seafloor",
+			"id": "/pa/units/commanders/base_commander/base_commander_ammo_laser.json"
+		}
+	]
+}
