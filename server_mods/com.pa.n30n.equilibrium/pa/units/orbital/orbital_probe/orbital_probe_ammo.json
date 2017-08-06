@@ -12,14 +12,11 @@
 		"initial_radius": 15.0
 	},
 	"initial_velocity": 0,
-	"max_velocity": 100.0,
 	"lifetime": 5.0,
 	"audio_loop": "/SE/Movement/missile/artillery_short_missile_fly_loop",
 	"events": {
 		"died": {
-			"audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-			"effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx",
-			"effect_scale": 0.5
+			"audio_cue": "/SE/Impacts/missile_artillery_long_holkins"
 		}
 	},
 	"model": {

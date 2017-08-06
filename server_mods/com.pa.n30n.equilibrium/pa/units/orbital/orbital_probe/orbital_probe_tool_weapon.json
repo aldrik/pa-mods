@@ -12,13 +12,15 @@
 	"yaw_range": 30,
 	"pitch_range": 0,
 	"firing_arc_pitch": 90,
-	"firing_standard_deviation": 1,
+	"firing_standard_deviation": 0,
 	"spread_fire": true,
 	"auto_attack": true,
 	"self_destruct": true,
 	"no_busy_auto_attack": true,
 	"target_layers": [
 		"WL_LandHorizontal",
-		"WL_WaterSurface"
+		"WL_Seafloor",
+		"WL_WaterSurface",
+		"WL_Underwater"
 	]
 }
