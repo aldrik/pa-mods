@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Icarus",
 	"description": "!LOC:Solar Drone- Produces energy. Weak. Attacks land, air, and sea targets.",
 	"max_health": 40,
-	"build_metal_cost": 125,
+	"build_metal_cost": 150,
 	"usable": true,
 	"attachable": {
 		"offsets": {
@@ -19,6 +19,8 @@
 	},
 	"unit_types": [
 		"UNITTYPE_Air",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Gunship",
 		"UNITTYPE_EnergyProduction",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Basic",
