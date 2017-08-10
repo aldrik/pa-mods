@@ -2,8 +2,8 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "!LOC:Grenadier",
 	"description": "!LOC:Fire Support- Long-range. Can fire over walls. Attacks land and sea targets.",
-	"max_health": 70,
-	"build_metal_cost": 135,
+	"max_health": 80,
+	"build_metal_cost": 100,
 	"attachable": {
 		"offsets": {
 			"root": [
