@@ -9,5 +9,7 @@
 		"energy": 400,
 		"metal": 120
 	},
+	"reclaim_layers": [],
+	"reclaim_types": [],
 	"can_only_assist_with_buildable_items": true
 }
