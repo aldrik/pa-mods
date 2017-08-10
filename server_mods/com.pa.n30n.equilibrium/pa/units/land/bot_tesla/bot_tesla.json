@@ -38,8 +38,8 @@
 	"navigation": {
 		"type": "land-small",
 		"acceleration": 140,
-		"brake": -1,
-		"move_speed": 14,
+		"brake": 30,
+		"move_speed": 15,
 		"turn_speed": 720
 	},
 	"physics": {
