@@ -88,6 +88,15 @@
 				"socket_leftMuzzle"
 			],
 			"show_range": false
+		},
+		{
+			"spec_id": "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_tool_weapon_land.json",
+			"aim_bone": "bone_turret",
+			"muzzle_bone": [
+				"socket_rightMuzzle",
+				"socket_leftMuzzle"
+			],
+			"show_range": false
 		}
 	],
 	"events": {

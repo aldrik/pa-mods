@@ -1,0 +1,10 @@
+{
+	"base_spec": "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_tool_weapon.json",
+	"ammo_id":[
+		{
+			"layer": "WL_LandHorizontal",
+			"id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_land.json"
+		}
+	],
+	"pitch_range": 40
+}

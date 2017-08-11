@@ -4,10 +4,6 @@
 		{
 			"layer": "WL_Seafloor",
 			"id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo.json"
-		},
-		{
-			"layer": "WL_LandHorizontal",
-			"id": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_land.json"
 		}
 	],
 	"spawn_layers": "WL_Underwater",
