@@ -75,7 +75,7 @@
 			"audio_cue": "/SE/Build_Complete/veh"
 		},
 		"fired": {
-			"audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
+			"audio_cue": "/SE/Weapons/veh/tank_hover_fire",
 			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
 		},
 		"died": {

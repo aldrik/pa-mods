@@ -4,22 +4,17 @@
 		"filename": ""
 	},
 	"fx_trail": {
-		"filename": "/pa/units/land/tank_hover/tank_hover_ammo_trail.pfx",
+		"filename": "/pa/effects/specs/tank_light_proj.pfx",
 		"offset": [
 			0.0,
 			0.0,
 			0.0
 		]
 	},
-	"events": {
-		"died": {
-			"audio_cue": "/SE/Impacts/laser_blast"
-		}
-	},
-	"damage": 40,
+	"damage": 80,
 	"splash_damage": 0,
 	"splash_radius": 0,
-	"initial_velocity": 300.0,
-	"max_velocity": 300.0,
+	"initial_velocity": 200.0,
+	"max_velocity": 200.0,
 	"lifetime": 0.5
 }
