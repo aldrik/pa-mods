@@ -28,22 +28,35 @@
 	},
 	"skeleton_controls": [
 		{
-			"type": "fader",
-			"lerp_func": "is_active",
-			"child": {
-				"type": "procedural_aim",
-				"rotation_bone": "bone_turretBack",
-				"rotation_axis": "z"
-			}
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretBack",
+			"rotation_axis": "z",
+			"weapon_index": 1
 		},
 		{
-			"type": "fader",
-			"lerp_func": "is_active",
-			"child": {
-				"type": "procedural_aim",
-				"rotation_bone": "bone_pitchBack",
-				"rotation_axis": "x"
-			}
+			"type": "procedural_aim",
+			"rotation_bone": "bone_pitchBack",
+			"rotation_axis": "x",
+			"weapon_index": 1
+		},
+		{
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretFront",
+			"rotation_axis": "z",
+			"weapon_index": 0
+		},
+		{
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretFront",
+			"rotation_axis": "x",
+			"weapon_index": 0
+		},
+		{
+			"type": "recoil",
+			"bone": "bone_recoil",
+			"recoil_dist": 1,
+			"restore_time": 1,
+			"unit_event": "fired"
 		}
 	]
 }

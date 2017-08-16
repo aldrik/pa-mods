@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "!LOC:Mend",
 	"description": "!LOC:Advanced Support Fabricator- Repairs much faster. Can build turrets in addition to mines.",
-	"max_health": 150,
+	"max_health": 200,
 	"spawn_layers": "WL_LandHorizontal",
 	"build_metal_cost": 750,
 	"attachable": {
@@ -41,7 +41,7 @@
 	"transportable": {
 		"size": 1
 	},
-	"guard_layer": "WL_LandHorizontal",
+	"guard_layer": null,
 	"navigation": {
 		"type": "land-small",
 		"acceleration": 120,
@@ -91,13 +91,24 @@
 	},
 	"tools": [
 		{
+			"spec_id": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_tool_weapon.json",
+			"record_index": 0,
+			"aim_bone": "bone_turretFront",
+			"muzzle_bone": "socket_muzzleFront"
+		},
+		{
 			"spec_id": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_build_arm.json",
+			"record_index": 1,
 			"aim_bone": "bone_turretBack"
 		}
 	],
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/fab"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
+			"effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzleFront"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Bot",
