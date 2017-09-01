@@ -11,10 +11,10 @@
 			0.0
 		]
 	},
-	"damage": 80,
+	"damage": 75,
 	"splash_damage": 0,
 	"splash_radius": 0,
-	"initial_velocity": 200.0,
-	"max_velocity": 200.0,
-	"lifetime": 0.5
+	"initial_velocity": 210.0,
+	"max_velocity": 210.0,
+	"lifetime": 1.0
 }
