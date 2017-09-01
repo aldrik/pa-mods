@@ -20,7 +20,7 @@
 		}
 	},
 	"fx_trail": {
-		"filename": "/pa/effects/specs/tank_light_proj.pfx"
+		"filename": "/pa/units/land/bot_sniper/bot_sniper_proj_trail.pfx"
 	},
 	"physics": {
 		"ignore_gravity": true,

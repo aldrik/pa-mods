@@ -1,5 +1,5 @@
 {
-	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+	"base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
 	"ammo_id": "/pa/units/land/bot_sniper/bot_sniper_ammo.json",
 	"rate_of_fire": 0.5,
 	"idle_aim_delay": 3.0,
@@ -15,5 +15,9 @@
 		"WL_Seafloor",
 		"WL_WaterSurface",
 		"WL_Air"
+	],
+	"target_priorities": [
+		"Mobile | Defense | Offense",
+		"Structure - Wall"
 	]
 }
