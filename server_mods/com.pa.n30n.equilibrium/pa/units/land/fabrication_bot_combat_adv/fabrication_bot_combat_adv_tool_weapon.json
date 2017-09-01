@@ -18,5 +18,5 @@
 	"target_priorities": [
 		"Basic"
 	],
-	"exclude_unit_types": "(Structure - Defense) | ((CombatFabBuild & CombatFabAdvBuild) - (FabBuild | FabAdvBuild))"
+	"exclude_unit_types": "Structure - (SurfaceDefense | (Defense & Artillery) | Tactical)"
 }
