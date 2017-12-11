@@ -15,7 +15,7 @@
 		}
 	},
 	"production": {
-		"energy": 175
+		"energy": 210
 	},
 	"unit_types": [
 		"UNITTYPE_Air",
@@ -53,12 +53,14 @@
 			"cue": "/SE/Selection/air/transport"
 		}
 	},
+	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "air",
+		"aggressive_distance": 25.0,
 		"acceleration": 30,
 		"brake": 20,
 		"move_speed": 90,
-		"turn_speed": 90,
+		"turn_speed": 180,
 		"vertical_speed": 40,
 		"hover_time": -1.0
 	},
