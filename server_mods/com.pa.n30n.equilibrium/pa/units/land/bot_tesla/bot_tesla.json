@@ -18,9 +18,6 @@
 			]
 		}
 	},
-	"storage": {
-		"energy": 1200
-	},
 	"unit_types": [
 		"UNITTYPE_Bot",
 		"UNITTYPE_Mobile",
