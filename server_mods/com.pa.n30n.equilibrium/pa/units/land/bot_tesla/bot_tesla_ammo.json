@@ -6,7 +6,7 @@
 	"full_damage_splash_radius": 2,
 	"initial_velocity": 180.0,
 	"max_velocity": 180.0,
-	"lifetime": 1,
+	"lifetime": 1.0,
 	"fx_trail": {
 		"filename": "/pa/effects/specs/tesla_proj_trail.pfx"
 	},
@@ -22,5 +22,14 @@
 		"gravity_scalar": 8,
 		"add_to_spatial_db": false,
 		"allow_underground": true
-	}
+	},
+	"flight_type": "Staged",
+	"stages": [
+		{
+			"stage_duration": 500
+		},
+		{
+			"die_here": true
+		}
+	]
 }
