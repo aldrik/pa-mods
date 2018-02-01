@@ -4,7 +4,7 @@
 	"description": "!LOC:Proxy Commander -- Builds advanced structures. Durable. High damage. Attacks everything but orbital.",
 	"strategic_icon_priority": 1,
 	"max_health": 8000,
-	"build_metal_cost": 7000,
+	"build_metal_cost": 5400,
 	"buildable_types": "Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot",
 	"show_in_orbital_layer": true,
 	"armor_type": "AT_Commander",
