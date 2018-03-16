@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.slot-player {
+	margin-left: -5px !important;
+}
+
+.slot-player-commander .bootstrap-select {
+	margin-top: -1px !important;
+}
+
+.slot-player-text.ai, .slot-player-text.truncate {
+	margin-top: 10px;
+}
+
+
+/* Legion doesn't clear ready apon removing ai slot. */
+.slot-player.empty.ready {
+	border-image: url(coui://ui/main/game/new_game/img/ctrl_user_slot.png) 0 17 53 17;
+}
