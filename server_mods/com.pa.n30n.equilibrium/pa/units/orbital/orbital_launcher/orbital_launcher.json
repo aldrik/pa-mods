@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Orbital Launcher",
 	"description": "!LOC:Basic manufacturing- Builds and launches satellites and other units.",
 	"max_health": 6000,
-	"build_metal_cost": 1600,
+	"build_metal_cost": 1800,
 	"atrophy_rate": 45.0,
 	"atrophy_cool_down": 15.0,
 	"buildable_types": "Orbital & FactoryBuild & Basic",
