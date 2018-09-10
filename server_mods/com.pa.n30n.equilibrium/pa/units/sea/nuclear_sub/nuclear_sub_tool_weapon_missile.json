@@ -13,6 +13,11 @@
 	"firing_standard_deviation": 30,
 	"spread_fire": true,
 	"auto_attack": true,
+	"target_priorities": [
+		"Structure - Wall",
+		"Mobile",
+		"Wall"
+	],
 	"target_layers": [
 		"WL_LandHorizontal",
 		"WL_WaterSurface"
