@@ -17,9 +17,9 @@
 	"firing_arc_pitch": 90,
 	"firing_standard_deviation": 0,
 	"spread_fire": true,
-	"auto_attack": true,
+	"auto_attack": false,
 	"self_destruct": true,
-	"no_busy_auto_attack": true,
+	"no_busy_auto_attack": false,
 	"target_layers": [
 		"WL_LandHorizontal",
 		"WL_Seafloor",

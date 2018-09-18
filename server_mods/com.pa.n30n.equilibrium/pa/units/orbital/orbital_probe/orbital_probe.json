@@ -1,8 +1,8 @@
 {
 	"base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
 	"display_name": "Hermes",
-	"description": "!LOC:Space Probe- Fast. Provides ground vision. Delivers a heavy payload down to the surface.",
-	"max_health": 50,
+	"description": "!LOC:Space Probe- Fast. Provides ground vision. Delivers a hefty payload to surface and underwater targets.",
+	"max_health": 40,
 	"build_metal_cost": 200,
 	"system_velocity_multiplier": 22.0,
 	"gravwell_velocity_multiplier": 9.0,
@@ -31,6 +31,7 @@
 		"ORDER_Attack",
 		"ORDER_Assist"
 	],
+	"guard_layer": "WL_AnyGroundOrWater",
 	"navigation": {
 		"type": "orbital",
 		"acceleration": 75,
