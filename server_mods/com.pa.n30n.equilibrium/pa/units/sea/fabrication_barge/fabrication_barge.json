@@ -45,7 +45,7 @@
 		"type": "deepwater",
 		"acceleration": 100,
 		"brake": 10,
-		"move_speed": 10,
+		"move_speed": 12,
 		"turn_speed": 90,
 		"turn_accel": 45,
 		"park_stamp_type": "sphere",
