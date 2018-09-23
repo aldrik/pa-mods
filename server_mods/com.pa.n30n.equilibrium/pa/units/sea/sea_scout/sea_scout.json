@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Piranha",
 	"description": "!LOC:Gunboat- Cheap. Fast. Expendable. Attacks land and sea targets.",
 	"max_health": 175,
-	"build_metal_cost": 150,
+	"build_metal_cost": 100,
 	"spawn_layers": "WL_WaterSurface",
 	"unit_types": [
 		"UNITTYPE_Naval",
