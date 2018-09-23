@@ -22,7 +22,7 @@
 		"type": "deepwater",
 		"acceleration": 15,
 		"brake": 8,
-		"move_speed": 17,
+		"move_speed": 16,
 		"turn_speed": 50,
 		"turn_accel": 25,
 		"park_stamp_type": "box",
