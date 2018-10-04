@@ -22,6 +22,7 @@
 		"UNITTYPE_Construction",
 		"UNITTYPE_Structure",
 		"UNITTYPE_Land",
+		"UNITTYPE_CmdBuild",
 		"UNITTYPE_FabBuild",
 		"UNITTYPE_FabAdvBuild",
 		"UNITTYPE_Basic",
