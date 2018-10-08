@@ -16,5 +16,11 @@
 	"target_layers": [
 		"WL_Air",
 		"WL_AnyHorizontalGroundOrWaterSurface"
+	],
+	"target_priorities": [
+		"Air & Fighter",
+		"Mobile",
+		"Structure - Wall",
+		"Wall"
 	]
 }
