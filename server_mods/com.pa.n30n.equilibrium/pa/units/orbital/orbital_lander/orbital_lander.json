@@ -4,7 +4,6 @@
 	"description": "!LOC:Orbital lander- Load it up, get units to other planets.",
 	"max_health": 150,
 	"build_metal_cost": 200,
-	"system_velocity_multiplier": 10.0,
 	"gravwell_velocity_multiplier": 5.0,
 	"usable": true,
 	"attachable": {

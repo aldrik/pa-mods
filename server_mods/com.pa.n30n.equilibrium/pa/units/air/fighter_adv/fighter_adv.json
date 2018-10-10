@@ -4,7 +4,6 @@
 	"description": "!LOC:Interplanetary Fighter- Stronger fighter. Can move between planets. Can only attack air targets.",
 	"build_metal_cost": 820,
 	"max_health": 300,
-	"system_velocity_multiplier": 15.0,
 	"gravwell_velocity_multiplier": 6.0,
 	"unit_types": [
 		"UNITTYPE_Fighter",

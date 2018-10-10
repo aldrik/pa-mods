@@ -7,7 +7,7 @@
 	"show_in_orbital_layer": true,
 	"enable_orbital_shell": true,
 	"influence_radius": 1000,
-	"system_velocity_multiplier": 15.0,
+	"system_velocity_multiplier": 20.0,
 	"gravwell_velocity_multiplier": 3.0,
 	"planetary_arrival_cooldown_time": 1.0,
 	"wreckage_health_frac": 0.0,

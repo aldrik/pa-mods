@@ -4,7 +4,6 @@
 	"description": "!LOC:Space Probe- Fast. Provides ground vision. Delivers a hefty payload to surface and underwater targets.",
 	"max_health": 40,
 	"build_metal_cost": 200,
-	"system_velocity_multiplier": 22.0,
 	"gravwell_velocity_multiplier": 9.0,
 	"attachable": {
 		"offsets": {
