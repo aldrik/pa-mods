@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Advanced Vehicle Factory",
 	"description": "!LOC:Advanced manufacturing- Builds land vehicles.",
 	"max_health": 30000,
-	"build_metal_cost": 4200,
+	"build_metal_cost": 3600,
 	"atrophy_rate": 80.0,
 	"atrophy_cool_down": 15.0,
 	"buildable_types": "Mobile & Tank & FactoryBuild",
