@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Grenadier",
 	"description": "!LOC:Fire Support- Long-range. Can fire over walls. Attacks land and sea targets.",
 	"max_health": 75,
-	"build_metal_cost": 100,
+	"build_metal_cost": 90,
 	"attachable": {
 		"offsets": {
 			"root": [
