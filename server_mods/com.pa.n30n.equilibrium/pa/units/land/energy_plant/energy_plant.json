@@ -17,6 +17,7 @@
 		"UNITTYPE_Basic",
 		"UNITTYPE_CmdBuild",
 		"UNITTYPE_FabBuild",
+		"UNITTYPE_FabOrbBuild",
 		"UNITTYPE_Economy"
 	],
 	"recon": {

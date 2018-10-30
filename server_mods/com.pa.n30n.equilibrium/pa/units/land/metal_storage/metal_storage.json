@@ -17,6 +17,7 @@
 		"UNITTYPE_CmdBuild",
 		"UNITTYPE_FabBuild",
 		"UNITTYPE_FabAdvBuild",
+		"UNITTYPE_FabOrbBuild",
 		"UNITTYPE_Economy"
 	],
 	"recon": {
