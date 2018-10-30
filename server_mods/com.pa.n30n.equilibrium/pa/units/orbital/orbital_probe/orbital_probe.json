@@ -33,6 +33,8 @@
 	"guard_layer": "WL_AnyGroundOrWater",
 	"navigation": {
 		"type": "orbital",
+		"aggressive_behavior": "line",
+		"aggressive_distance": 60.0,
 		"acceleration": 75,
 		"brake": 75,
 		"move_speed": 75,
