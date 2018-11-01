@@ -39,7 +39,8 @@
 		"group_preference": "front"
 	},
 	"physics": {
-		"radius": 6
+		"radius": 6,
+		"sync_radius_to_extents": false
 	},
 	"recon": {
 		"observer": {
