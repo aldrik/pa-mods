@@ -154,7 +154,7 @@
 		"type": "orbital",
 		"acceleration": 25,
 		"brake": 25,
-		"move_speed": 25,
+		"move_speed": 55,
 		"turn_speed": 360,
 		"hover_time": -1.0,
 		"vertical_speed": 200
