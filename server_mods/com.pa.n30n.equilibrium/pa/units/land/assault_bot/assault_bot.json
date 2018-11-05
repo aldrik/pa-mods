@@ -31,9 +31,9 @@
 		"size": 1
 	},
 	"guard_layer": "WL_AnySurface",
+	"attack_range_frac": 0.8,
 	"navigation": {
 		"type": "amphibious",
-		"aggressive_behavior": "line",
 		"acceleration": 50,
 		"brake": -1,
 		"move_speed": 18,
