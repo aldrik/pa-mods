@@ -9,7 +9,6 @@
 	"lifetime": 5,
 	"physics": {
 		"radius": 1,
-		"gravity_scalar": 10,
 		"add_to_spatial_db": false
 	},
 	"damage_volume": {
@@ -20,12 +19,7 @@
 		"filename": "/pa/units/air/bomb_guided/bomb_guided.papa"
 	},
 	"fx_trail": {
-		"filename": "/pa/effects/specs/shell_artillery_large_proj_trail.pfx",
-		"offset": [
-			0.0,
-			1.0,
-			0.0
-		]
+		"filename": null
 	},
 	"audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
 	"events": {

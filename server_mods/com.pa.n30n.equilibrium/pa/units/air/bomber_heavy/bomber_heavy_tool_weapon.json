@@ -14,7 +14,6 @@
 	"auto_attack": true,
 	"spread_fire": false,
 	"carpet_fire": true,
-	"firing_standard_deviation": 10,
 	"target_layers": [
 		"WL_LandHorizontal",
 		"WL_WaterSurface",
