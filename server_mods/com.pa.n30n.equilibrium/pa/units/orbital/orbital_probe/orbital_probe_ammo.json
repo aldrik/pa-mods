@@ -37,7 +37,7 @@
 		"radius": 5,
 		"gravity_scalar": 10,
 		"ignore_gravity": false,
-		"allow_underground": false,
+		"allow_underground": true,
 		"add_to_spatial_db": true
 	}
 }
