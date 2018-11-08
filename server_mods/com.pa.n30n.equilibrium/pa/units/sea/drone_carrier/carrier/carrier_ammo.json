@@ -10,7 +10,7 @@
 	"initial_velocity": 110.0,
 	"max_velocity": 110.0,
 	"turn_rate": 720.0,
-	"lifetime": 5.0,
+	"lifetime": 0.3,
 	"model": {
 		"filename": "/pa/units/sea/drone_carrier/drone/drone.papa"
 	},
@@ -39,7 +39,7 @@
 		{
 			"ignores_gravity": true,
 			"ignores_LOS": true,
-			"stage_duration": 500,
+			"stage_duration": 100,
 			"stage_turn_rate": 0,
 			"rotates_to_velocity": true
 		},
