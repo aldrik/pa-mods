@@ -11,6 +11,12 @@
 	"armor_damage_map": {
 		"AT_Structure": 1.0
 	},
+	"fx_trail": {
+		"filename": "/pa/effects/specs/laser_blast_proj_trail.pfx"
+	},
+	"model": {
+		"filename": ""
+	},
 	"events": {
 		"died": {
 			"effect_spec": "/pa/effects/specs/default_explosion.pfx"
