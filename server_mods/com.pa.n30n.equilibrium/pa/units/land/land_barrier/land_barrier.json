@@ -25,6 +25,7 @@
 		"UNITTYPE_FabBuild",
 		"UNITTYPE_FabAdvBuild",
 		"UNITTYPE_CmdBuild",
+		"UNITTYPE_CombatFabBuild",
 		"UNITTYPE_CombatFabAdvBuild"
 	],
 	"physics": {

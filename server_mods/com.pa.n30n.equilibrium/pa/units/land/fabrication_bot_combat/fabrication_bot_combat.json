@@ -18,7 +18,7 @@
 			]
 		}
 	},
-	"buildable_types": "CombatFabBuild",
+	"buildable_types": "CombatFabBuild - Wall",
 	"unit_types": [
 		"UNITTYPE_Construction",
 		"UNITTYPE_Bot",
