@@ -87,17 +87,8 @@
 	},
 	"model": [
 		{
-			"layer": "WL_LandHorizontal",
+			"layer": "WL_AnyHorizontalGroundOrWaterSurface",
 			"filename": "/pa/units/land/land_barrier/land_barrier.papa",
-			"animations": {
-				"deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
-				"idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
-			},
-			"animtree": "/pa/anim/anim_trees/land_barrier_anim_tree.json"
-		},
-		{
-			"layer": "WL_WaterSurface",
-			"filename": "/pa/units/sea/sea_barrier/sea_barrier.papa",
 			"animations": {
 				"deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
 				"idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
