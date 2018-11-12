@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Leveler",
 	"description": "!LOC:Assault Tank- Devastating damage. Heavy armor. Vulnerable to flanking. Attacks land and sea targets.",
 	"max_health": 1500,
-	"build_metal_cost": 600,
+	"build_metal_cost": 700,
 	"attachable": {
 		"offsets": {
 			"root": [
@@ -61,11 +61,7 @@
 		{
 			"spec_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_tool_weapon.json",
 			"aim_bone": "socket_aim",
-			"projectiles_per_fire": 2,
-			"muzzle_bone": [
-				"socket_leftMuzzle",
-				"socket_rightMuzzle"
-			]
+			"muzzle_bone": "socket_muzzle"
 		}
 	],
 	"events": {
