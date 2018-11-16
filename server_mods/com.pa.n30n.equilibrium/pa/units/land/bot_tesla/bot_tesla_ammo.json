@@ -16,20 +16,13 @@
 			"effect_spec": "/pa/effects/specs/tesla_hit.pfx"
 		}
 	},
+	"flight_type": "Ballistic",
 	"physics": {
 		"type": "Projectile",
 		"radius": 1,
 		"gravity_scalar": 8,
+		"ignore_gravity": false,
 		"add_to_spatial_db": false,
 		"allow_underground": true
-	},
-	"flight_type": "Staged",
-	"stages": [
-		{
-			"stage_duration": 500
-		},
-		{
-			"die_here": true
-		}
-	]
+	}
 }
