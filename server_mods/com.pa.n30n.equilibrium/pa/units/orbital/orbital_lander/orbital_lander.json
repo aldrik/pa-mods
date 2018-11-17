@@ -146,7 +146,7 @@
 	},
 	"transporter": {
 		"capacity": 1,
-		"transportable_unit_types": "(Mobile & Land) - Commander | (Fabber & (Air | Naval))",
+		"transportable_unit_types": "(Mobile & Land) | (Fabber & (Air | Naval))",
 		"transporter_attach_bone": "bone_payload",
 		"transportable_attach_offset": "head"
 	},
