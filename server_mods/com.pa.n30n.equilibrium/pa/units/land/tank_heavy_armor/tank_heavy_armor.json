@@ -30,7 +30,8 @@
 	"transportable": {
 		"size": 1
 	},
-	"guard_layer": "WL_LandHorizontal",
+	"guard_layer": "WL_AnyGroundOrWater",
+	"guard_radius": 90,
 	"navigation": {
 		"type": "amphibious",
 		"acceleration": 100,
