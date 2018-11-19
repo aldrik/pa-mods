@@ -13,5 +13,11 @@
 	"auto_attack": true,
 	"target_layers": [
 		"WL_Air"
+	],
+	"target_priorities":[
+		"Air & Bomber",
+		"Air & Gunship",
+		"Air & Transport",
+		"Air & Mobile"
 	]
 }
