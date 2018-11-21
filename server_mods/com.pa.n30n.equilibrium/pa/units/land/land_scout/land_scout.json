@@ -40,7 +40,8 @@
 		"acceleration": 250,
 		"brake": 250,
 		"move_speed": 25,
-		"turn_speed": 360
+		"turn_speed": 360,
+		"group_preference": "back"
 	},
 	"physics": {
 		"radius": 3
