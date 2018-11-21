@@ -7,7 +7,7 @@
 	"auto_repair": true,
 	"construction_demand": {
 		"energy": 400,
-		"metal": 120
+		"metal": 90
 	},
 	"reclaim_layers": [],
 	"reclaim_types": [],

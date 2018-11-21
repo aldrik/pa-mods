@@ -16,6 +16,7 @@
 	"unit_types": [
 		"UNITTYPE_Air",
 		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
 		"UNITTYPE_MissileDefense",
 		"UNITTYPE_Advanced",
 		"UNITTYPE_FactoryBuild"
@@ -64,7 +65,7 @@
 		"type": "air",
 		"acceleration": 30,
 		"brake": 20,
-		"move_speed": 30,
+		"move_speed": 45,
 		"turn_speed": 180,
 		"vertical_speed": 100,
 		"hover_time": -1.0
