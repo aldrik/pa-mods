@@ -74,9 +74,6 @@
 			"muzzle_bone": "bone_root"
 		}
 	],
-	"death_weapon": {
-		"air_ammo_spec": "/pa/ammo/air_pbaoe/air_pbaoe.json"
-	},
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/air"
