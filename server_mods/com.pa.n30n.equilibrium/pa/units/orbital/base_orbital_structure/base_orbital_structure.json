@@ -6,7 +6,7 @@
 	"wreckage_health_frac": 0.0,
 	"build_metal_cost": 1,
 	"spawn_layers": "WL_Orbital",
-	"armor_type": "AT_Structure",
+	"armor_type": "AT_Orbital",
 	"guard_radius": 50,
 	"unit_types": [
 		"UNITTYPE_Structure",
