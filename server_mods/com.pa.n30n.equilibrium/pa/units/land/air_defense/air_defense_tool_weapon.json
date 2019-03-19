@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
 	"ammo_id": "/pa/units/land/air_defense/air_defense_ammo.json",
-	"rate_of_fire": 4.0,
+	"rate_of_fire": 3.0,
 	"max_range": 150,
 	"yaw_rate": 360,
 	"pitch_rate": 360,
