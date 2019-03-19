@@ -13,9 +13,5 @@
 	"firing_arc_pitch": 360,
 	"target_layers": [
 		"WL_Air"
-	],
-	"target_priorities": [
-		"Air & ( Transport | Bomber | Gunship | Titan)",
-		"Mobile & Air"
 	]
 }
