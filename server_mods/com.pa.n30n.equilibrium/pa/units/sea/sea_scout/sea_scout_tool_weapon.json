@@ -1,6 +1,9 @@
 {
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
 	"ammo_id": "/pa/units/sea/sea_scout/sea_scout_ammo.json",
+	"arc_type": "Both",
+	"max_firing_velocity": 150,
+	"min_firing_velocity": 85,
 	"rate_of_fire": 2,
 	"max_range": 130,
 	"yaw_rate": 360,
