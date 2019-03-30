@@ -8,6 +8,7 @@
 	"atrophy_cool_down": 15.0,
 	"spawn_layers": "WL_Orbital",
 	"gravwell_velocity_multiplier": 6.0,
+	"planetary_arrival_cooldown_time": 3.0,
 	"wreckage_health_frac": 0.0,
 	"energy_efficiency_requirement": 1.0,
 	"attachable": {
