@@ -88,6 +88,9 @@
 		"orient_interp_rate": 60.0
 	},
 	"recon": {
+		"observable": {
+			"layer": "underwater"
+		},
 		"observer": {
 			"items": [
 				{

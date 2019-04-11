@@ -83,6 +83,9 @@
 		"sync_radius_to_extents": true
 	},
 	"recon": {
+		"observable": {
+			"layer": "underwater"
+		},
 		"observer": {
 			"items": [
 				{

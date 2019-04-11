@@ -42,6 +42,9 @@
 		"radius": 3.5
 	},
 	"recon": {
+		"observable": {
+			"layer": "underwater"
+		},
 		"observer": {
 			"items": [
 				{
