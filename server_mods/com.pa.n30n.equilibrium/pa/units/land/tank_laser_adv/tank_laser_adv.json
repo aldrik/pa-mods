@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Leveler",
 	"description": "!LOC:Assault Tank- Devastating damage. Heavy armor. Vulnerable to flanking. Attacks land and sea targets.",
 	"max_health": 1500,
-	"build_metal_cost": 700,
+	"build_metal_cost": 650,
 	"attachable": {
 		"offsets": {
 			"root": [
