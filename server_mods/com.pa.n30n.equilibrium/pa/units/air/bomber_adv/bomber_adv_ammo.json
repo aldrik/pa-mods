@@ -6,7 +6,7 @@
 	"cruise_height": 40,
 	"initial_velocity": 80.0,
 	"max_velocity": 80.0,
-	"turn_rate": 45,
+	"turn_rate": 0,
 	"lifetime": 15,
 	"max_health": 1,
 	"influence_radius": 400,
@@ -28,9 +28,10 @@
 		{
 			"ignores_gravity": false,
 			"ignores_LOS": true,
-			"stage_duration": 250,
+			"stage_duration": 200,
 			"stage_turn_rate": 0,
-			"rotates_to_velocity": true
+			"rotates_to_velocity": true,
+			"ignores_LOS": true
 		},
 		{
 			"ignores_gravity": true,
@@ -38,7 +39,8 @@
 			"stage_duration": 0,
 			"stage_turn_rate": 120,
 			"stage_change_range": 20,
-			"rotates_to_velocity": true
+			"rotates_to_velocity": true,
+			"ignores_LOS": true
 		},
 		{
 			"ignores_gravity": false,
@@ -46,7 +48,8 @@
 			"stage_duration": 5000,
 			"stage_turn_rate": 3600,
 			"apply_thrust": true,
-			"rotates_to_velocity": true
+			"rotates_to_velocity": true,
+			"ignores_LOS": false
 		}
 	]
 }

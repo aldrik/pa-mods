@@ -65,7 +65,12 @@
 		{
 			"spec_id": "/pa/units/air/bomber_adv/bomber_adv_tool_weapon.json",
 			"aim_bone": "bone_root",
-			"muzzle_bone": "bone_root"
+			"muzzle_bone": [
+				"socket_rightMuzzle01",
+				"socket_leftMuzzle01",
+				"socket_rightMuzzle02",
+				"socket_leftMuzzle02"
+			]
 		}
 	],
 	"events": {
