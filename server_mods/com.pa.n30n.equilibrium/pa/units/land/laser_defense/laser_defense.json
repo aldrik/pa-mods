@@ -55,6 +55,7 @@
 		{
 			"spec_id": "/pa/units/land/laser_defense/laser_defense_tool_weapon.json",
 			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
 			"muzzle_bone": [
 				"socket_rightMuzzle",
 				"socket_leftMuzzle"
