@@ -37,6 +37,7 @@
 		"brake": 100,
 		"move_speed": 10,
 		"turn_speed": 180,
+		"aggressive_behavior": "line",
 		"group_preference": "front"
 	},
 	"physics": {
