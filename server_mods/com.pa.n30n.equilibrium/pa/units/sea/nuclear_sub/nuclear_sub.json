@@ -18,6 +18,7 @@
 		"UNITTYPE_Sub",
 		"UNITTYPE_FactoryBuild"
 	],
+	"guard_layer": "WL_AnyGroundOrWater",
 	"navigation": {
 		"type": "underwater",
 		"acceleration": 40,

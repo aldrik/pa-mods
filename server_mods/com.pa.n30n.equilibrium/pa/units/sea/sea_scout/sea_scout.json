@@ -13,6 +13,7 @@
 		"UNITTYPE_Basic",
 		"UNITTYPE_FactoryBuild"
 	],
+	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "deepwater",
 		"acceleration": 75,
