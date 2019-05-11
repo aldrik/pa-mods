@@ -14,7 +14,7 @@
 		{
 			"ignores_gravity": true,
 			"ignores_LOS": true,
-			"stage_duration": 100,
+			"stage_duration": 350,
 			"stage_turn_rate": 0,
 			"rotates_to_velocity": true
 		},
