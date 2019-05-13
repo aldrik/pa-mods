@@ -26,6 +26,7 @@
 	"flight_type": "Staged",
 	"stages": [
 		{
+			"stage_turn_rate": 6,
 			"stage_duration": 500
 		},
 		{
