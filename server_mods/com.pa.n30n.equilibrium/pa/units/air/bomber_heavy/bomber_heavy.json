@@ -16,17 +16,18 @@
 	"guard_layer": "WL_AnyGroundOrWater",
 	"navigation": {
 		"type": "air",
-		"acceleration": 10,
+		"acceleration": 30,
 		"brake": 20,
-		"move_speed": 20,
-		"turn_speed": 110,
+		"move_speed": 45,
+		"turn_speed": 60,
+		"turn_accel": 12,
 		"dodge_radius": 0,
 		"dodge_multiplier": 0.0,
 		"aggressive_distance": 50.0,
 		"aggressive_height": 100.0,
 		"wobble_factor": 0.05,
 		"wobble_speed": 0.1,
-		"bank_factor": 0.25
+		"bank_factor": 4.0
 	},
 	"physics": {
 		"radius": 6,
