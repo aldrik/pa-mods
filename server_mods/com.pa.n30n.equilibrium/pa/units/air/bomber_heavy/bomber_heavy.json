@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Wyrm",
 	"description": "!LOC:Siege Bomber- Durable. Slow. Devastating damage. Attacks land and sea targets.",
 	"max_health": 3000,
-	"build_metal_cost": 3300,
+	"build_metal_cost": 3800,
 	"unit_types": [
 		"UNITTYPE_Bomber",
 		"UNITTYPE_Mobile",
