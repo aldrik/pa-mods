@@ -10,5 +10,7 @@
 		"AT_Structure": 0.0
 	},
 	"damage": 2000,
-	"splash_radius": 175
+	"splash_radius": 175,
+	"burn_damage": 0,
+	"burn_radius": 0
 }
