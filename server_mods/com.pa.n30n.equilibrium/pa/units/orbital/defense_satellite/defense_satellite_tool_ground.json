@@ -15,5 +15,9 @@
 		"WL_Air",
 		"WL_LandHorizontal",
 		"WL_WaterSurface"
+	],
+	"target_priorities": [
+		"Mobile | Structure - Wall",
+		"Wall"
 	]
 }
