@@ -65,7 +65,7 @@
 	"navigation": {
 		"type": "air",
 		"acceleration": 30,
-		"brake": 20,
+		"brake": 90,
 		"move_speed": 70,
 		"turn_speed": 180,
 		"vertical_speed": 100,
