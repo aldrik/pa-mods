@@ -37,6 +37,7 @@
 	},
 	"navigation": {
 		"type": "land-small",
+		"aggressive_behavior": "follow",
 		"acceleration": 250,
 		"brake": 250,
 		"move_speed": 25,
