@@ -2,20 +2,21 @@
 	"base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
 	"display_name": "Jig",
 	"description": "!LOC:Gas mining and metal creation satellite. Only works above gas giant planets.",
-	"max_health": 3000,
-	"build_metal_cost": 3000,
+	"strategic_icon_priority": 3,
+	"max_health": 750,
+	"build_metal_cost": 650,
 	"atrophy_rate": 50.0,
 	"atrophy_cool_down": 15.0,
 	"spawn_layers": "WL_Orbital",
 	"area_build_type": "Sphere",
-	"area_build_separation": 50,
+	"area_build_separation": 15,
 	"build_restrictions": "Terrainless",
 	"production": {
-		"metal": 36
+		"metal": 9
 	},
 	"storage": {
-		"energy": 50000,
-		"metal": 10000
+		"energy": 12500,
+		"metal": 2500
 	},
 	"unit_types": [
 		"UNITTYPE_Orbital",
@@ -204,8 +205,8 @@
 		50
 	],
 	"placement_size": [
-		100,
-		100
+		90,
+		90
 	],
 	"TEMP_texelinfo": 72.293
 }
