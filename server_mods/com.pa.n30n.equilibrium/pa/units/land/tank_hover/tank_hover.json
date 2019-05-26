@@ -3,7 +3,7 @@
 	"display_name": "!LOC:Drifter",
 	"description": "!LOC:Hover Tank- Fast. Can cross water and lava. Attacks land and sea targets.",
 	"max_health": 320,
-	"build_metal_cost": 225,
+	"build_metal_cost": 245,
 	"armor_type": "AT_Hover",
 	"attachable": {
 		"offsets": {
