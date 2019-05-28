@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
 	"display_name": "Lob",
-	"description": "Dox Launcher - Builds and fires Dox at nearby targets.",
+	"description": "Dox Launcher - Builds and fires Dox behind enemy lines.",
 	"max_health": 1000,
 	"build_metal_cost": 1200,
 	"atrophy_rate": 25,

@@ -31,6 +31,8 @@
 		"WL_Underwater"
 	],
 	"target_priorities": [
+		"(Tank & Artillery) | (Basic & Tank & AirDefense) | (Advanced & Bot & AirDefense) | (Advanced & SelfDestruct & Bot) | (Mobile & Advanced) & (Artillery | Tactical) - (Bot & Custom1)",
+		"(Tank & Scout) | (Basic & Mobile & Land & Construction)",
 		"Mobile - Air",
 		"Structure - Wall",
 		"Wall"
