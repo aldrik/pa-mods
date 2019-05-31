@@ -18,6 +18,7 @@
 		"initial_build_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
 		"default_build_stance": "Continuous"
 	},
+	"wait_to_rolloff_time": 2,
 	"unit_types": [
 		"UNITTYPE_Land",
 		"UNITTYPE_Structure",
