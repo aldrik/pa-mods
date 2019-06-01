@@ -17,7 +17,7 @@
 	"navigation": {
 		"type": "air",
 		"acceleration": 30,
-		"brake": 20,
+		"brake": 5,
 		"move_speed": 45,
 		"turn_speed": 60,
 		"turn_accel": 12,
