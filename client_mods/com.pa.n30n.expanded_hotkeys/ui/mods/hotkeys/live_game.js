@@ -311,7 +311,7 @@
 
 	var inputmap_reload = globalHandlers["inputmap.reload"];
 	globalHandlers["inputmap.reload"] = function() {
-		/* Add shift hotkeys where no conflict exists. */
+		/* Add modeless shift hotkeys where no conflict exists. */
 		api.settings.loadLocalData();
 		for (var key in api.settings.data.keyboard) {
 			if (!key.startsWith("command_modeless_")) {
@@ -339,6 +339,26 @@
 			};
 			action_sets.gameplay[key + "_shift"] = action_sets.gameplay[key];
 		}
+
+		/* Add build shift hotkeys. */
+		for (var i = 1; i <= 18; ++i) {
+			var key = "build_item_" + i;
+			var definition = jQuery.extend({}, api.settings.definitions.keyboard.settings[key]);
+			var user_set = api.settings.data.keyboard[key];
+			if (user_set) {
+				if (user_set.indexOf("shift+") === -1) {
+					continue;
+				}
+				definition.default = "shift+" + user_set;
+				//
+			}
+			else {
+				definition.default = "shift+" + definition.default;
+			}
+			api.settings.definitions.keyboard.settings[key + "_shift"] = definition;
+			action_sets.build[key + "_shift"] = function(item) { return function () { maybeInvokeWith('buildItemFromList', item); } }(i - 1);
+		}
+
 		return inputmap_reload.apply(globalHandlers, arguments);
 	};
 
