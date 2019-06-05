@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/* Hide the button to expande player list while playing */
+.div_player_list_panel .list_control_btn {
+	display: none;
+}

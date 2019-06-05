@@ -1,0 +1,44 @@
+{
+	"context": "server",
+	"identifier": "com.pa.n30n.masquerade",
+	"display_name": "Masquerade",
+	"description": "Disguise players during the match.",
+	"author": "N30N",
+	"version": "0.9",
+	"date": "2018/03/16",
+	"build": "108271",
+	"priority": "100",
+	"titansOnly": true,
+	"signature": "not yet implemented",
+	"dependencies": [
+		"com.pa.domdom.color_chat"
+	],
+	"forum": "https://forums.uberent.com/threads/masquerade.72838/",
+	"category": [
+		"server-mod",
+		"ui",
+		"lobby"
+	],
+	"scenes": {
+		"new_game": [
+			"coui://ui/mods/com.pa.n30n.masquerade/new_game.js",
+			"coui://ui/mods/com.pa.n30n.masquerade/new_game.css"
+		],
+		"new_game_cinematic": [
+			"coui://ui/mods/com.pa.n30n.masquerade/new_game_cinematic.js"
+		],
+		"live_game_players": [
+			"coui://ui/mods/com.pa.n30n.masquerade/live_game_players.js",
+			"coui://ui/mods/com.pa.n30n.masquerade/live_game_players.css"
+		],
+		"live_game_chat": [
+			"coui://ui/mods/com.pa.n30n.masquerade/live_game_chat.js"
+		],
+		"live_game_unit_alert": [
+			"coui://ui/mods/com.pa.n30n.masquerade/live_game_unit_alert.js"
+		],
+		"live_game_devmode": [
+			"coui://ui/mods/com.pa.n30n.masquerade/live_game_devmode.css"
+		]
+	}
+}

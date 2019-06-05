@@ -1,4 +1,4 @@
-# pa-mods
+# PA-Mods
 My mods that make playing [Planetary Annihilation][pa] even more enjoyable. They can be installed using the in-game community mod manager.
 
 All code can be used under the [WTFPLv2] and assets (such as maps) under the [CC-BYv4].
@@ -6,6 +6,19 @@ All code can be used under the [WTFPLv2] and assets (such as maps) under the [CC
 [pa]: http://www.uberent.com/pa/
 [CC-BYv4]: https://creativecommons.org/licenses/by/4.0/
 [WTFPLv2]: http://www.wtfpl.net/txt/copying/
+
+## Server
+
+### Masquerade
+
+Disguises players during the match.
+
+- Commanders are hidden in lobby, you can only select a faction.
+- Colours are hidden in lobby (high contrast colours are randomly assigned).
+- During the match chat messages and the player list is anonymised.
+
+
+## Client
 
 ### UI Tweaks
 
