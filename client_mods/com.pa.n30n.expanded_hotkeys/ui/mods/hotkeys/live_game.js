@@ -177,10 +177,18 @@
 		mmevent = event;
 		if (started && !started.area && new Date().getTime() >= started.areaTime) {
 			started.holodeck.unitBeginCommand(started.command, started.offsetX, started.offsetY).then(function (ok) { started.area = ok; });
+			// started.holodeck.unitBeginCommand(
+				// (started.command === "repair_and_assist") ? "repair" : started.command,
+				// started.offsetX,
+				// started.offsetY
+			// ).then(function (ok) { started.area = ok; });
 		}
 	});
 
-	model.commands().forEach(function(command) {
+	// model.commands().forEach(function(command) {
+	var commands = model.commands().slice(0);
+	commands.push("repair_and_assist");
+	commands.forEach(function(command) {
 		switch (command) {
 			case "special_move":
 			case "special_attack":
@@ -205,7 +213,7 @@
 		}
 
 		action_sets.gameplay["command_modeless_" + command] = function(event) {
-			if (command !== "ping" && !model.allowedCommands[model.toPascalCase(command)]) {
+			if (command !== "ping" && command !== "repair_and_assist" && !model.allowedCommands[model.toPascalCase(command)]) {
 				return;
 			}
 			var queue = (event && event.shiftKey);
@@ -214,13 +222,13 @@
 			scaleMouseEvent(mmevent);
 			started = {
 				"holodeck": holodeck,
-				"command": command,
+				"command": (command === "repair_and_assist") ? "repair" : command,
 				"time": now,
-				"areaTime": now + 125,
+				"areaTime": now + 150,
 				"offsetX": mmevent.offsetX,
 				"offsetY": mmevent.offsetY
 			};
-			var modeless = function() {
+			var modeless = function(command) {
 				if (!command) {
 					holodeck.unitGo(started.offsetX, started.offsetY, queue).then(function (action) {
 						holodeck.showCommandConfirmation(action, started.offsetX, started.offsetY);
@@ -242,7 +250,7 @@
 			}
 
 			if (!area_support) {
-				modeless();
+				modeless(command);
 				return;
 			}
 
@@ -255,16 +263,35 @@
 				$(document).off("keyup", capture);
 				scaleMouseEvent(mmevent);
 				if (started.area) {
-					holodeck.unitEndCommand(command, mmevent.offsetX, mmevent.offsetY, queue).then(function (success) {
-						holodeck.showCommandConfirmation(success ? command : "", mmevent.offsetX, mmevent.offsetY);
-						if (success) {
-							api.audio.playSound("/SE/UI/UI_Command_" + command.capitalize());
-						}
-						model.endCommandMode();
-					});
+					(function() {
+						var command = started.command;
+						holodeck.unitEndCommand(command, mmevent.offsetX, mmevent.offsetY, queue).then(function (success) {
+							holodeck.showCommandConfirmation(success ? command : "", mmevent.offsetX, mmevent.offsetY);
+							if (success) {
+								api.audio.playSound("/SE/UI/UI_Command_" + command.capitalize());
+							}
+							model.endCommandMode();
+						});
+					})();
 				}
 				else {
-					modeless();
+					if (command === "repair_and_assist") {
+							if (model.allowedCommands[model.toPascalCase("assist")]) {
+								modeless("assist");
+								queue = true;
+							}
+							if (model.allowedCommands[model.toPascalCase("repair")]) {
+								modeless("repair");
+								queue = true;
+							}
+							if (model.allowedCommands[model.toPascalCase("assist")]) {
+								modeless("assist");
+							}
+					}
+					else {
+						modeless(command);
+					}
+
 					model.endCommandMode();
 				}
 				started = false;
