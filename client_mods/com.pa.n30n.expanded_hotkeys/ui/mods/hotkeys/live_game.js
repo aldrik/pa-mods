@@ -95,6 +95,7 @@
 		else {
 			model.setCommandIndex(-1);
 		}
+		model.activatedBuildId("");
 	},
 	function() {
 		// Stop command on double press.
@@ -341,6 +342,13 @@
 		}
 
 		/* Add build shift hotkeys. */
+		var resetBar = function(event) {
+			if (event.keyCode !== 16 /* ShiftLeft */) {
+				model.resetClearBuildSequence();
+				document.removeEventListener("keyup", resetBar, false);
+			}
+		};
+
 		for (var i = 1; i <= 18; ++i) {
 			var key = "build_item_" + i;
 			var definition = jQuery.extend({}, api.settings.definitions.keyboard.settings[key]);
@@ -350,13 +358,30 @@
 					continue;
 				}
 				definition.default = "shift+" + user_set;
-				//
 			}
 			else {
 				definition.default = "shift+" + definition.default;
 			}
 			api.settings.definitions.keyboard.settings[key + "_shift"] = definition;
-			action_sets.build[key + "_shift"] = function(item) { return function () { maybeInvokeWith('buildItemFromList', item); } }(i - 1);
+			action_sets.build[key + "_shift"] = function(index) {
+				return function () {
+					model.currentBuildStructureId('');
+					api.panels.build_bar.query('build_item', index).then(function(id) {
+						if (!id) {
+							return;
+						}
+						document.addEventListener("keyup", resetBar, false);
+						model.executeStartBuild({
+							"item": id,
+							"batch": true,
+							"cancel": false,
+							"urgent": false,
+							"more": ""
+						});
+						model.activatedBuildId(id);
+					});
+				};
+			}(i - 1);
 		}
 
 		return inputmap_reload.apply(globalHandlers, arguments);

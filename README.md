@@ -21,9 +21,9 @@ Also includes minor fixes:
 
 Extends the vanilla hotkeys system a little:
 
-- *Enables adding immediate/prioritised build queues (control key by default).*
-- Case insensativ build bar items (allow holding shift).
 - *Modeless/click-free commands (hold for area commands).*
+- Enables adding immediate/prioritised build queues (control key).
+- Batch queuing and case insensativ build bar items (holding shift).
 - Clear build queue(s) while allowing already started units to finish.
 - Filter selection by unit type.
 - Select all idle fabricators.
