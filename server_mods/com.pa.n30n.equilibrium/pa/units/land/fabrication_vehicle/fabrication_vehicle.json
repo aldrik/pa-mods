@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "!LOC:Fabrication Vehicle",
 	"description": "!LOC:Builder- Builds structures. Durable. More powerful than other builders.",
-	"max_health": 225,
+	"max_health": 150,
 	"build_metal_cost": 175,
 	"buildable_types": "Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild",
 	"attachable": {
@@ -61,13 +61,13 @@
 					"layer": "surface_and_air",
 					"channel": "sight",
 					"shape": "capsule",
-					"radius": 100
+					"radius": 125
 				},
 				{
 					"layer": "underwater",
 					"channel": "sight",
 					"shape": "capsule",
-					"radius": 100
+					"radius": 125
 				}
 			]
 		}
