@@ -24,6 +24,9 @@
 		],
 		"live_game_unit_alert": [
 			"coui://ui/mods/hotkeys/live_game_unit_alert.js"
+		],
+		"live_game_options_bar": [
+			"coui://ui/mods/hotkeys/live_game_options_bar.js"
 		]
 	}
 }

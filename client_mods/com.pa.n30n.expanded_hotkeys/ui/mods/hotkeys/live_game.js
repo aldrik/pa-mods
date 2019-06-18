@@ -1,4 +1,36 @@
 (function() {
+	/* Remove toggle menu from back/deselect. */
+	model.modalBack = function () {
+		if (model.mode() === 'fab')
+			model.endFabMode();
+		else if (model.chatSelected()) {
+			model.chatSelected(false);
+		}
+		else if (model.mode() === 'landing') {
+			model.toggleMenu();
+		}
+		else if (model.mode() === 'default') {
+			if (model.hasSelection()) {
+
+				if (model.activeBuildGroup())
+					model.clearBuildSequence();
+				else {
+					api.select.empty();
+					model.selection(null);
+				}
+			}
+			else if (model.showTimeControls()) {
+				model.showTimeControls(false)
+			}
+			else {
+				// model.toggleMenu();
+			}
+		}
+		else if (model.mode().startsWith('command_'))
+			model.endCommandMode();
+		else
+			model.mode('default');
+	}
 
 	/* AMMO GROUP & MINES FIX -----*/
 	action_sets["build structure"]["start_build_ammo"] = function () {
