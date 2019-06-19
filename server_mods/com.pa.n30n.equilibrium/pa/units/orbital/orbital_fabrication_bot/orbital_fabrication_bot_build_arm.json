@@ -18,6 +18,7 @@
 		"WL_AnyLayer"
 	],
 	"reclaim_types": [
+		"Friendly_Commander",
 		"Unit",
 		"Wreckage",
 		"Feature"
