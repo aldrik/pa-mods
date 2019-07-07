@@ -16,8 +16,5 @@
 		"radius_accel": -40.0,
 		"delay": 1.5,
 		"burnable_remove_radius": 100.0
-	},
-	"armor_damage_map": {
-		"AT_Orbital": 0.0
 	}
 }
