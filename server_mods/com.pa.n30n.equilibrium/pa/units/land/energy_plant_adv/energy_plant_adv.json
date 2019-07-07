@@ -3,13 +3,13 @@
 	"display_name": "!LOC:Advanced Energy Plant",
 	"description": "!LOC:Advanced manufacturing- Produces energy.",
 	"max_health": 5000,
-	"build_metal_cost": 2000,
+	"build_metal_cost": 2400,
 	"atrophy_rate": 45.0,
 	"atrophy_cool_down": 15.0,
 	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
 	"area_build_type": "Line",
 	"production": {
-		"energy": 3750
+		"energy": 5000
 	},
 	"unit_types": [
 		"UNITTYPE_Structure",
