@@ -22,11 +22,5 @@
 		"WL_Air",
 		"WL_SeaFloor",
 		"WL_Underwater"
-	],
-	"target_priorities": [
-		"Commander",
-		"AirDefense | ( Air & Fighter)",
-		"Artillery & Advanced & ( Land | Naval )",
-		"Nuke | NukeDefense"
 	]
 }
