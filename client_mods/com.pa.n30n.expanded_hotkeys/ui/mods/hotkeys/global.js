@@ -97,6 +97,17 @@
 		default: ''
 	};
 
+	api.settings.definitions.ui.settings["build_sequence_timeout"] = {
+		title: '!LOC:Build bar timeout',
+		type: 'slider',
+		options: {
+			min: 0,
+			max: 5000,
+			step: 100
+		},
+		default: 500
+	};
+
 
 	/* MODELESS COMMANDS ----------------*/
 	["move",

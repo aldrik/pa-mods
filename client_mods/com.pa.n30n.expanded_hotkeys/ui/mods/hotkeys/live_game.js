@@ -186,6 +186,15 @@
 	action_sets.gameplay["select_idle_fabbers"]=api.select.idleFabber;
 
 
+	/* Expose build bar timeout to be configurable ---*/
+	model.buildSequenceTimeout = ko.computed(function () {
+		if (model.selectedMobile()) {
+			return 0;
+		}
+		return api.settings.getSynchronous('ui', 'build_sequence_timeout');
+	});
+
+
 	/* MODELESS COMMANDS ----------*/
 	var scaleMouseEvent = function (mdevent) {
 		if (mdevent.uiScaled)

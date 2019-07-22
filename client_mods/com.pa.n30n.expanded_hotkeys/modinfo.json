@@ -27,6 +27,9 @@
 		],
 		"live_game_options_bar": [
 			"coui://ui/mods/hotkeys/live_game_options_bar.js"
+		],
+		"settings": [
+			"coui://ui/mods/hotkeys/settings.js"
 		]
 	}
 }
