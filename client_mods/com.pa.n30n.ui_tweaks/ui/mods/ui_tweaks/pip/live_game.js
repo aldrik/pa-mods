@@ -40,4 +40,12 @@
 		}
 	};
 	model.showPips.subscribe(pipToggled);
+
+
+	// State fix for when copying to pip.
+	var copyToPip = model.copyToPip;
+	model.copyToPip = function () {
+		copyToPip();
+		model.pipMirrorMode(false);
+	};
 })();
