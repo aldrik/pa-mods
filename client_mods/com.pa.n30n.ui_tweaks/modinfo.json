@@ -31,6 +31,9 @@
 		],
 		"uberbar": [
 			"coui://ui/mods/ui_tweaks/uberbar_fix.css"
+		],
+		"leaderboard": [
+			"coui://ui/mods/ui_tweaks/leaderboard.js"
 		]
 	}
 }
