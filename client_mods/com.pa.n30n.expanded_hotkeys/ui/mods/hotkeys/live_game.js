@@ -68,6 +68,11 @@
 	};
 
 
+	/* Fix PiP support for sellecting matching units on screen. */
+	model.selectedAllMatchingCurrentSelectionOnScreen = function () {
+		api.Holodeck.focused.selectMatchingTypes('add', model.selectionTypes());
+	}
+
 
 	/* BUILD ITEMS ----------------*/
 	var regular_build = api.unit.build;
