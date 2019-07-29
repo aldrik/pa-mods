@@ -1,0 +1,30 @@
+html .body_panel {
+	display: block;
+	width: 230px;
+	height: 207px;
+}
+
+html .btn_pip {
+	float: right;
+	clear: both;
+	margin: 2px 0 0;
+	opacity:.8;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-animation: fadeout;
+	-webkit-transition-delay: .001s;
+}
+
+html .btn_pip:hover {
+	opacity:1;
+	-webkit-animation: none;
+	-webkit-transition: none;
+}
+
+html .btn_pip_copy {
+	margin-bottom: 3px;
+}
+
+html .btn_split_screen {
+	background: url(coui://ui/main/game/live_game/img/pip/btn_split_screen.png) center center no-repeat #000;
+}

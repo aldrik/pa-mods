@@ -14,8 +14,14 @@
 	],
 	"scenes": {
 		"live_game": [
+			"coui://ui/mods/ui_tweaks/pip/live_game.js",
+			"coui://ui/mods/ui_tweaks/pip/live_game.css",
 			"coui://ui/mods/ui_tweaks/live_game.js",
 			"coui://ui/mods/ui_tweaks/hide_control_group_bar.css"
+		],
+		"live_game_pip": [
+			"coui://ui/mods/ui_tweaks/pip/live_game_pip.js",
+			"coui://ui/mods/ui_tweaks/pip/live_game_pip.css"
 		],
 		"live_game_selection": [
 			"coui://ui/mods/ui_tweaks/selection.css"

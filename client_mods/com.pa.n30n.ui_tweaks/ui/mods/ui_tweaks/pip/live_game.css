@@ -1,0 +1,23 @@
+.pip_open.split_screen holodeck.primary {
+	width: 50%;
+}
+
+.pip_open.split_screen holodeck.pip.bottom_right:not(.gSecondPip) {
+	width: calc(50% - 2px);
+	height: auto;
+	top: 1px;
+	bottom: 1px !important;
+	border: 0;
+	z-index: -2;
+}
+
+html panel.pip_controls_tl {
+	top: inherit;
+	left: inherit;
+	bottom: 40px;
+	right: 7px;
+}
+
+.split_screen panel.pip_controls_tl {
+	bottom: 70px;
+}
