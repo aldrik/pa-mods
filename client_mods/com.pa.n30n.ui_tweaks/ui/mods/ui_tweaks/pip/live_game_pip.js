@@ -13,4 +13,15 @@
 
 	// Also place tooltips for the other button on the left.
 	$(".btn_pip").attr("data-placement", "left")
+
+
+	// Fix for PiP POV enable indicator.
+	model.povMode = ko.computed(function() {
+		return !!model.state().pov;
+	});
+
+	var pov_button = $(".btn_pip_pov");
+	var pov_data_bind = pov_button.attr("data-bind");
+	pov_data_bind = pov_data_bind.replace("mirrorMode", "povMode");
+	pov_button.attr("data-bind", pov_data_bind);
 })();

@@ -2,11 +2,13 @@
 	var html = $('html');
 
 	model.pipSplitMode = ko.observable(false);
+	model.pipPOVMode = ko.observable(false);
 	model.pipState.dispose();
 	model.pipState = ko.pureComputed(function () {
 		return {
 			alert: model.pipAlertMode(),
 			mirror: model.pipMirrorMode(),
+			pov: model.pipPOVMode(),
 			split: model.pipSplitMode()
 		};
 	});
@@ -40,6 +42,19 @@
 		}
 	};
 	model.showPips.subscribe(pipToggled);
+
+
+	// Fix for PiP POV enable indicator.
+	var togglePOV = model.togglePOV;
+	model.togglePOV = function(forcePrimary) {
+		togglePOV.apply(model, arguments);
+
+		if (!forcePrimary) {
+			var holodeck = api.Holodeck.focused;
+			var is_pov = holodeck.cameraMode() !== "pov";
+			model.pipPOVMode(is_pov);
+		};
+	}
 
 
 	// State fix for when copying to pip.
