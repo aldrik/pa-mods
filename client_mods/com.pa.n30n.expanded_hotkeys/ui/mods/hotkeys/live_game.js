@@ -73,6 +73,11 @@
 		api.Holodeck.focused.selectMatchingTypes('add', model.selectionTypes());
 	}
 
+	/* Double tap PiP to toggle split screen if ui tweaks is installed.*/
+	if (model.toggleSplitScreen) {
+		action_sets.general["toggle_pips"] = input.doubleTap(model.togglePips, model.toggleSplitScreen);
+	}
+
 
 	/* BUILD ITEMS ----------------*/
 	var regular_build = api.unit.build;
