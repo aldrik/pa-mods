@@ -4,9 +4,8 @@
 
 .pip_open.split_screen holodeck.pip.bottom_right:not(.gSecondPip) {
 	width: calc(50% - 2px);
-	height: auto;
+	height: calc(100% - 2px);
 	top: 1px;
-	bottom: 1px !important;
 	border: 0;
 	z-index: -2;
 }
