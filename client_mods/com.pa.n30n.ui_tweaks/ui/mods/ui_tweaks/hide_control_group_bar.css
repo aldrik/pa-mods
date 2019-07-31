@@ -15,3 +15,7 @@
 .bottom_show_unit_group_controls {
 	bottom: 0px !important;
 }
+
+.bottom_show_uberbar {
+	margin-bottom: 35px !important;
+}
