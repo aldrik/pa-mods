@@ -32,6 +32,9 @@
 		"live_game_action_bar": [
 			"coui://ui/mods/ui_tweaks/power_and_continuous_build_stance.css"
 		],
+		"live_game_action_bar": [
+			"coui://ui/mods/ui_tweaks/live_game_action_bar.css"
+		],
 		"main": [
 			"coui://ui/mods/ui_tweaks/system_editor_fix.css"
 		],
