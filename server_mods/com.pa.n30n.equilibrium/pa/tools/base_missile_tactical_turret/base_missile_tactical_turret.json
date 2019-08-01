@@ -16,7 +16,7 @@
 	"target_priorities": [
 		"Orbital & Defense | Orbital & Heavy | Orbital - Scout & Offense - Fighter",
 		"Advanced & Mobile - Orbital",
-		"Mobile | Structure - Wall",
+		"Mobile | Structure - (Wall | Defense & CombatFabBuild)",
 		"Orbital"
 	]
 }
